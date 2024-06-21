@@ -55,13 +55,13 @@ function showSuccessMessage(e) {
   });
 
   successMessage.style.transform = "scale(1)";
-  background.style.display = "block";
+  background.style.transform = "scalex(1)";
   body.style.overflow = "hidden";
 
   // //Close Message
   setTimeout(function () {
     successMessage.style.transform = "scale(0)";
-    background.style.display = "none";
+    background.style.transform = "scalex(0)";
     body.style.overflow = "auto";
   }, 2500);
 
