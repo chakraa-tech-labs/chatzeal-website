@@ -1,109 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatzeal - Coming soon</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: 'Arial', sans-serif;
-            background: #f5f5f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: #7f8c8d;
-        }
-        .countdown {
-            display: flex;
-            justify-content: space-around;
-        }
-        .countdown div {
-            width: 80px;
-            height: 80px;
-            background: #3498db;
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5em;
-        }
-        .countdown div span {
-            font-size: 0.5em;
-            margin-top: 5px;
-        }
-        .subscribe {
-            margin-top: 30px;
-        }
-        .subscribe input[type="email"] {
-            padding: 10px;
-            font-size: 1em;
-            width: calc(100% - 100px);
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .subscribe button {
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #fff;
-            background: #3498db;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .subscribe button:hover {
-            background: #2980b9;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Chatzeal</h1>
-        <h5>Omni channel business chat platform</h5>
-        <p>Our website is under construction. We'll be here soon with our new awesome site, subscribe to be notified!</p>
-        <div class="countdown">
-            <div>
-                10<br><span>Days</span>
-            </div>
-            <div>
-                12<br><span>Hours</span>
-            </div>
-            <div>
-                30<br><span>Minutes</span>
-            </div>
-            <div>
-                15<br><span>Seconds</span>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive 
+      Chatzeal</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+  </head>
+  <body id="body">
+    <div id="background-div">
+
+      <div id="successMessage">
+        <div>
+          <p class="p1">Thank you for your interest.</p> <br>  
+          <p class="p2">We will update you through email.</p>
         </div>
-        <div class="subscribe">
-            <form name="contact" netlify>
-                <input type="email" name="email" placeholder="Enter your email">
-                <p><button>Notify Me</button></p>
-            </form>    
-        </div>
+       
+      </div>
+
     </div>
-</body>
+
+    <header >
+      <nav>
+        <div class="nav-brand">Chatzeal</div>
+        <div class="nav-links" id="nav-links">
+          <ul>
+            <li class="all-links">
+              <div class="nav-item">
+                <a href="#section1" id="home-link">Home</a>
+              </div>
+            </li>
+
+            <li class="all-links">
+              <div class="nav-item">
+                <a href="#Key-Features">Features</a>
+              </div>
+            </li>
+
+            <li class="all-links">
+              <div class="nav-item">
+                <a href="#Solutions" id="solutions-link">Solutions</a>
+              </div>
+            </li>
+
+            <li class="all-links">
+              <div class="nav-item">
+                <a href="#Get-Started">Get Started</a>
+              </div>
+            </li>
+
+            <li class="all-links">
+              <div class="nav-item">
+                <a href="#contact">Contact Us</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+
+      <div class="section1" id="section1">
+        <div class="sec1-content-box">
+          <div class="sec1-sub-content-box">
+            <div class="sec1-content">
+              <div class="content-text1">Engage. Convert. Grow.</div>
+              <div class="content-text2">
+                Transform your website visitors into  loyal customers
+              </div>
+
+              <div class="content-text3">
+                <form action="" onsubmit="showSuccessMessage(event);smoothScrollTo('background-div')" >
+                  <input type="email" placeholder="Enter your email" required >
+                  <button class="form"><div>Join the waitlist</div></button>
+                </form>     
+              </div>
+
+            </div>
+          </div>
+          <div class="sec1-content2-img">
+            <img src="media/section1-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="sec2-content">Drive your conversations to conversions</div>
+        <div class="sec2-content-box">
+
+          <div class="sec2-box sec2-box1">
+            <div class="sec2-sub-box">
+              <div class="sec2-box-icon">
+                <img src="icons/message.svg" />
+              </div>
+              <div class="sec2-box-text">
+                Streamlined Customer Communication Platform
+              </div>
+            </div>
+          </div>
+
+          <div class="sec2-box sec2-box2">
+            <div class="sec2-sub-box">
+              <div class="sec2-box-icon">
+                <img src="icons/handshake.svg" />
+              </div>
+              <div class="sec2-box-text sec2-box-text2">
+                Automation For Lead Nurturing & Customer Engagment
+              </div>
+            </div>
+          </div>
+          <div class="sec2-box sec2-box3">
+            <div class="sec2-sub-box">
+              <div class="sec2-box-icon">
+                <img src="icons/Bulb.svg" />
+              </div>
+              <div class="sec2-box-text sec2-box-text3">
+                Comprehensive Analytics & Insights
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section3">
+        <div class="sec3-title">
+          Struggling to engage your website visitors?
+        </div>
+
+        <div class="sec3-content1">
+          <div class="sec3-con-box1">
+            <div class="sec3-con-icon sec3-con1-icon">
+              <img src="icons/sec3-blue-handshake.svg" alt="" />
+            </div>
+
+            <div class="sec3-con-text1 sec3-con1-text1">Instant Engagement</div>
+
+            <div class="sec3-con-text2 sec3-con1-text2">
+              Allow Visitors To Initiate Conversations Instantly, Right From
+              Your Website.
+            </div>
+          </div>
+          <div class="sec3-con-box2">
+            <div class="sec3-con-icon sec3-con2-icon">
+              <img src="icons/sec3-blue-boost.svg" alt="" />
+            </div>
+
+            <div class="sec3-con-text1 sec3-con2-text1">Boost Conversions</div>
+
+            <div class="sec3-con-text2 sec3-con2-text2">
+              Turn Casual Browsers Into Paying Customers With Personalized
+              Interactions.
+            </div>
+          </div>
+
+          <div class="sec3-con-box3">
+            <div class="sec3-con-icon sec3-con3-icon">
+              <img src="icons/sec3-blue-puzzle.svg" alt="" />
+            </div>
+
+            <div class="sec3-con-text1 sec3-con3-text1">
+              Seamless Integration
+            </div>
+
+            <div class="sec3-con-text2 sec3-con3-text2">
+              Quick And Easy Setup With <br />
+              Minimal Technical Effort.
+            </div>
+          </div>
+        </div>
+
+        <div class="sec3-content2">
+
+          <div class="sec3-con2-box1">
+            <div class="sec3-content2-box-icon">
+              <img src="icons/sec3-blue-headphone.svg" alt="" />
+            </div>
+            <div class="sec3-content2-box-text1">Enhanced Customer Support</div>
+            <div class="sec3-content2-box-text2">
+              Provide Real-Time Assistance, Answer Queries, And Resolve Issues
+              Promptly.
+            </div>
+          </div>
+
+          <div class="sec3-con2-box2">
+            <div class="sec3-content2-box-icon">
+              <img src="icons/sec3-blue-bar.svg" alt="" />
+            </div>
+            <div class="sec3-content2-box-text1 sec3-content2-box2-text1">
+              Analytics & Insights
+            </div>
+            <div class="sec3-content2-box-text2 sec3-content2-box2-text2">
+              Gain Valuable Insights Into Visitor Behavior And Chat Performance
+              To Optimize Your Strategy.
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="section4" id="Key-Features">
+        <div class="sec4-heading-box">
+          <div class="sec4-heading">Key Features</div>
+        </div>
+        <div class="sec4-content-main-box">
+
+          <div class="sec4-con-box sec4-con-box1">
+            <div class="sec4-con-sub-box sec4-con-sub-box1">
+              <div class="sec4-con-box-img sec4-con-box1-img">
+                <img src="media/key_features1.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box1-text">
+                <div class="sec4-con-box-text-1 sec4-con-box1-text-1">
+                  Centralized contact management
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box1-text-2">
+                  Segment And Manage All Your Customer Contacts Seamlessly From
+                  A Single Platform.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec4-con-box sec4-con-box2">
+            <div class="sec4-con-sub-box sec4-con-sub-box2">
+              <div class="sec4-con-box-img sec4-con-box1-img">
+                <img src="media/key_features2.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box2-text">
+                <div class="sec4-con-box-text-1 sec4-con-box2-text-1">
+                  Automated lead nurturing
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box2-text-2">
+                  Define automation rules to qualify leads, trigger automatic conversations, schedule follow-up tasks to ensure all your leads 
+                 <br> are attended.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec4-con-box sec4-con-box3">
+            <div class="sec4-con-sub-box sec4-con-sub-box3">
+              <div class="sec4-con-box-img sec4-con-box3-img">
+                <img src="media/key_features3.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box3-text">
+                <div class="sec4-con-box-text-1 sec4-con-box3-text-1">
+                  Integrate with CRM and other tools
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box3-text-2">
+                  Use smart automation to handle common queries <br> and free up your team’s time.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="sec4-con-box sec4-con-box1">
+            <div class="sec4-con-sub-box sec4-con-sub-box4">
+              <div class="sec4-con-box-img sec4-con-box4-img">
+                <img src="media/key_features4.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box4-text">
+                <div class="sec4-con-box-text-1 sec4-con-box4-text-1">
+                  Message templates and campaigns
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box4-text-2">
+                  Draft message templates for consistent communication, schedule campaigns and broadcast messages to engage with your customers at the right time.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="sec4-con-box sec4-con-box5">
+            <div class="sec4-con-sub-box sec4-con-sub-box5">
+              <div class="sec4-con-box-img sec4-con-box5-img">
+                <img src="media/key_features5.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box5-text">
+                <div class="sec4-con-box-text-1 sec4-con-box5-text-1">
+                  Automated chat assignment & tracking
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box5-text-2">
+                  Automatically assign customer chats to your team members to effectively track and ensure efficient handling of customer queries and follow-ups.
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section5" id="Solutions">
+        <div class="sec5-heading-box">
+          <div class="sec5-heading">Solutions</div>
+        </div>
+
+        <div class="sec5-content1-main-box">
+          <div class="sec5-content1-sub-box">
+            <div class="sec5-con-box sec5-con-box1">
+              <div class="sec5-con-icon sec5-con1-icon">
+                <img src="icons/solution-contacts.svg" alt="" />
+              </div>
+
+              <div class="sec5-con-text1 sec5-con1-text1">One-Click Chat</div>
+
+              <div class="sec5-con-text2 sec5-con1-text2">
+                Simplify the contact process with a single click to start a
+                WhatsApp chat.
+              </div>
+            </div>
+
+            <div class="sec5-con-box sec5-con-box2">
+              <div class="sec5-con-icon sec5-con2-icon">
+                <img src="icons/solution-speaker.svg" alt="" />
+              </div>
+              <div class="sec5-con-text1 sec5-con2-text1">
+                24/7 Availability
+              </div>
+              <div class="sec5-con-text2 sec5-con2-text2">
+                Keep the conversation going, <br />
+                even when your team <br />is offline.
+              </div>
+            </div>
+
+            <div class="sec5-con-box sec5-con-box3">
+              <div class="sec5-con-icon sec5-con2-icon">
+                <img src="icons/solution-check.svg" alt="" />
+              </div>
+              <div class="sec5-con-text1 sec5-con3-text1">Secure & Private</div>
+
+              <div class="sec5-con-text2 sec5-con3-text2">
+                Ensure all communications are secure and compliant with <br />
+                privacy standards.
+              </div>
+            </div>
+
+            <div class="sec5-con-box sec5-con-box4">
+              <div class="sec5-con-icon sec5-con2-icon">
+                <img src="icons/solution-plug.svg" alt="" />
+              </div>
+              <div class="sec5-con-text1 sec5-con4-text1">
+                Automated Responses
+              </div>
+
+              <div class="sec5-con-text2 sec5-con4-text2">
+                Use smart automation to handle common queries and free up your
+                team’s time.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec5-content2-main-box" id="Get-Started">
+          <div class="sec5-content2-heading-box">
+            <div class="sec5-content2-heading">Get started in 3 easy steps</div>
+          </div>
+          <div class="sec5-content2-sub-box">
+            <div class="sec5-con2-box sec5-con2-box1">
+              <div class="sec5-con2-box-icon sec5-con2-box1-icon">
+                <img src="icons/solution-con2-puzzle.svg" alt="" />
+                <span>Integrate</span>
+              </div>
+
+              <div class="sec5-con2-box-text sec5-con2-box-text1">
+                Add our widget to your website with a simple code snippet.
+              </div>
+            </div>
+
+            <div class="sec5-con2-box sec5-con2-box2">
+              <div class="sec5-con2-box-icon sec5-con2-box2-icon">
+                <img src="icons/solution-con2-message.svg" alt="" />
+                <span>Engage</span>
+              </div>
+
+              <div class="sec5-con2-box-text sec5-con2-box-text2">
+                Visitors click to chat, initiating a conversation via WhatsApp.
+              </div>
+            </div>
+
+            <div class="sec5-con2-box sec5-con2-box3">
+              <div class="sec5-con2-box-icon sec5-con2-box3-icon">
+                <img src="icons/solution-con2-serves.svg" alt="" />
+                <span>Convert</span>
+              </div>
+
+              <div class="sec5-con2-box-text sec5-con2-box-text3">
+                Provide personalized support and turn interactions into
+                conversions.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sec5-content3-main-box">
+          <div class="sec5-content3-sub-box">
+            <div class="sec5-con3-box sec5-con3-box1">
+              <div class="sec5-con3-box1-content-box">
+                <div class="sec5-con3-box1-content1">
+                  Ready to revolutionize your customer engagement?
+                </div>
+                <div class="sec5-con3-box1-content2">
+                  Join now and see the difference our WhatsApp Chat Integration
+                  can make for your business.
+                </div>
+                <div class="sec5-con3-box1-content3">
+                  <form action="" onsubmit="showSuccessMessage(event);smoothScrollTo('background-div')">
+                    <input type="email" placeholder="Enter your email" required >
+                    <button class="form"><div>Join the waitlist</div></button>
+                  </form>    
+                </div>
+              </div>
+            </div>
+            <div class="sec5-con3-box sec5-con3-box2">
+              <img src="media/customer_engagement.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer" id="contact">
+          <div class="footer-content-box">
+              <div class="footer-content1">
+                  <div class="footer-content1-text footer-content1-text1">Subscribe to our newsletter</div>
+                  <div class="footer-content-text footer-content1-text2">For product announcements and exclusive insights</div>
+                  <div class="footer-content1-text3">
+                      <form action="" onsubmit="showSuccessMessage(event);smoothScrollTo('background-div')">
+                          <input type="text" placeholder="Enter your email" required>
+                          <button>
+                              <div>Subscribe</div>
+                          </button>
+                      </form>
+                  </div>
+              </div>
+  
+              <div class="footer-content2">
+                  <div class="footer-content1-text footer-content2-text1">Contact us</div>
+                  <div class="footer-contact-box">
+                      <div class="contact-part1">
+                          <div class="contact-text1">
+                              <img src="icons/footer-message.svg" alt="">
+                              <span>contact@chakraa.io</span>
+                          </div>
+                          <div class="contact-text2">
+                              <img src="icons/footer-phone.svg" alt="">
+                              <span>+91 9876543210</span>
+                          </div>
+                      </div>
+                      <div class="contact-part2">
+                          <div class="contact-text3">
+                              <img src="icons/footer-location.svg" alt="">
+                              <span>Chakraa Universal Tech Labs Private Limited, S.No.. 35/31, Chitragupta Nagar, Urapakkam, Chennai, Tamil Nadu, India - 603210.</span>
+                          </div>
+                          <div class="contact-text4">
+                              <img src="icons/footer-tax.svg" alt="">
+                              <span>GST IN : 33AALCC2177J1ZJ</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyrights">
+        <div class="sub-copyrights">
+          <div class="copyrights-text copyrights-text1">© 2024 Chakraa Universal Tech Labs Private Limited | All rights reserved</div>
+          <div class="copyrights-text copyrights-text2">Terms & Conditions | Privacy Policy</div>
+        </div>
+      </div>
+  </footer>
+
+  </body>
+ 
+ 
+
+  <script src="script/index.js"></script>
 </html>
