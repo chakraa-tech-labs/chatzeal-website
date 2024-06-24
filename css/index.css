@@ -535,13 +535,14 @@ nav {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-bottom: 60px;
 }
 
 .sec4-con-box {
   /* w-1042,h-328 */
   width: 100%;
+  /* min-width: 1042px; */
   height: 55.4vh;
   min-height: 328px;
   margin-top: 20px;

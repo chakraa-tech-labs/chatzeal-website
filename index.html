@@ -431,8 +431,8 @@
                   <div class="footer-content1-text footer-content1-text1">Subscribe to our newsletter</div>
                   <div class="footer-content-text footer-content1-text2">For product announcements and exclusive insights</div>
                   <div class="footer-content1-text3">
-                      <form action="">
-                          <input type="text" placeholder="Enter your email">
+                      <form action="" onsubmit="showSuccessMessage(event);smoothScrollTo('background-div')">
+                          <input type="text" placeholder="Enter your email" required>
                           <button>
                               <div>Subscribe</div>
                           </button>
