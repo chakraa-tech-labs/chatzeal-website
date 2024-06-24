@@ -182,7 +182,7 @@ nav {
   display: flex;
   align-items: start;
   /* align-items: center; */
-  /* justify-content: space-between; */
+  justify-content: space-between;
   /* background-color: blue; */
 }
 
@@ -1345,7 +1345,16 @@ input[type="text"]::placeholder {
 @media (min-width: 900px) and (max-width: 1366px) {
   .section1 {
     height: 491px;
+    /* min-height: 491px; */
     /* max-height: auto; */
+  }
+
+  .content-text2 {
+    height: 68px;
+  }
+
+  .content-text3 {
+    height: 53px;
   }
 
   .sec1-sub-content-box {
