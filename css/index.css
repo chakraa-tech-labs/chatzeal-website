@@ -1349,6 +1349,10 @@ input[type="text"]::placeholder {
     /* max-height: auto; */
   }
 
+  .sec1-content {
+    height: 377px;
+  }
+
   .content-text2 {
     height: 68px;
   }
