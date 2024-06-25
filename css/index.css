@@ -125,6 +125,7 @@ nav {
   /* background-image: url("/Media/frame2.svg"); */
   /* background-repeat: no-repeat; */
 }
+
 .sec1-content-box {
   /* w-90 h-445 */
   /* height: 59vh; */
@@ -215,15 +216,6 @@ nav {
   font-size: 18px;
   color: #ffffff;
   font-family: "puvi-Semi-Bold";
-}
-
-.warring-text {
-  display: none;
-  margin-left: 5px;
-  margin-top: 3px;
-  color: #ff6e57;
-  font-size: 16px;
-  font-family: "puvi-Regular";
 }
 
 .sec1-content2-img {
@@ -1028,15 +1020,6 @@ nav {
   font-family: "puvi-Semi-Bold";
 }
 
-.warring-text2 {
-  display: none;
-  margin-left: 5px;
-  margin-top: 3px;
-  color: #ff6e57;
-  font-size: 16px;
-  font-family: "puvi-Regular";
-}
-
 .sec5-con3-box2 {
   /* w-452 h-387*/
   min-width: 453px;
@@ -1112,7 +1095,7 @@ nav {
 .footer-content1-text3 form {
   width: 100%;
   height: 100%;
-  /* display: flex; */
+  display: flex;
 }
 
 .footer-content1-text3 form input {
@@ -1122,7 +1105,6 @@ nav {
   text-indent: 14px;
   border: 1px solid #9095a1;
   border-radius: 4px 0px 0px 4px;
-  position: relative;
 }
 
 input[type="text"]::placeholder {
@@ -1132,25 +1114,15 @@ input[type="text"]::placeholder {
 .footer-content1-text3 form button {
   /* w-114,h-37 */
   width: 113px;
-  height: 34px;
+  height: 99%;
   color: #ffffff;
   border: none;
   cursor: pointer;
   border-radius: 0px 4px 4px 0px;
   background-color: #434ee1;
-  position: absolute;
 }
 
 .footer-content1-text3 form button div {
-  font-size: 14px;
-  font-family: "puvi-Regular";
-}
-
-.warring-text3 {
-  display: none;
-  margin-left: 5px;
-  margin-top: 3px;
-  color: #ff6e57;
   font-size: 14px;
   font-family: "puvi-Regular";
 }
