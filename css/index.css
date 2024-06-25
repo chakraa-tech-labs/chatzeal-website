@@ -66,7 +66,7 @@ nav {
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-family: "puvi-Regular";
+  font-family: "puvi-Semi-Bold";
   cursor: default;
 }
 
@@ -125,6 +125,7 @@ nav {
   /* background-image: url("/Media/frame2.svg"); */
   /* background-repeat: no-repeat; */
 }
+
 .sec1-content-box {
   /* w-90 h-445 */
   /* height: 59vh; */
