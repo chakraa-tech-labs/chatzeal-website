@@ -56,6 +56,10 @@ header {
   color: #000000 !important;
 }
 
+.navbar-nav li {
+  margin-left: 36px;
+}
+
 .section1 {
   min-height: 491px;
   height: auto;
