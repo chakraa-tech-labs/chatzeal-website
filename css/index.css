@@ -1875,3 +1875,12 @@ input[type="text"]::placeholder {
     display: none;
   }
 }
+
+/* .sec5-content3-sub-box {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding-left: 60px;
+  align-items: center;
+  justify-content: space-around;
+} */

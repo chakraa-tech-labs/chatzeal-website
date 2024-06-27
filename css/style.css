@@ -33,7 +33,7 @@
   display: none;
   scroll-behavior: smooth;
 }
-
+/* Header Style */
 header {
   position: sticky;
   top: 0;
@@ -60,6 +60,7 @@ header {
   margin-left: 36px;
 }
 
+/* Section-1 Style */
 .section1 {
   min-height: 491px;
   height: auto;
@@ -76,7 +77,6 @@ header {
   display: flex;
   align-items: end;
   justify-content: space-around;
-  /* background-color: red; */
 }
 
 .sec1-content-1 {
@@ -163,6 +163,7 @@ header {
   height: 100%;
 }
 
+/* Section-2 Style */
 .section2 {
   min-height: 348px;
   padding-bottom: 40px;
@@ -240,6 +241,7 @@ header {
   margin-left: 13px;
 }
 
+/* Section-3 Style */
 .section3 {
   min-height: 593px;
   padding-bottom: 100px;
@@ -319,11 +321,328 @@ header {
   text-align: center;
 }
 
-.footer {
-  min-height: 213px;
+/* Section-4 Style */
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.sec4-title {
+  font-size: 48px;
+  margin-top: 100px;
+  line-height: normal;
+  font-family: "puvi-Semi-Bold";
+}
+
+.sec4-content {
+  margin-top: 70px;
+  min-height: 1960px;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+}
+
+.sec4-con-sub-box {
+  display: flex;
+  gap: 42px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sec4-con-sub-box4,
+.sec4-con-sub-box2 {
+  flex-direction: row-reverse;
+}
+
+.sec4-con-box-img {
+  width: 492px;
+  height: 328px;
+  background-color: #142a19;
+}
+
+.sec4-con-box-text-1 {
+  width: 508px;
+  font-size: 28px;
+  font-family: "puvi-Semi-Bold";
+}
+
+.sec4-con-box-text-2 {
+  font-size: 16px;
+  margin-top: 16px;
+  color: #38393e;
+  font-family: "puvi-Regular";
+}
+
+/* Section-5 Style */
+.section5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  background-color: #f9f9fe;
+}
+
+.sec5-content {
   display: flex;
   justify-content: center;
-  /* background-color: #434ee1; */
+}
+
+.sec5-title {
+  font-size: 48px;
+  margin-top: 40px;
+  color: #000000;
+  line-height: normal;
+  font-family: "puvi-Semi-Bold";
+}
+
+.sec5-content1-main-box {
+  margin-top: 40px;
+}
+
+.sec5-content1-sub-box {
+  display: flex;
+  gap: 21px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sec5-con-box {
+  width: 308px;
+  height: 234px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec5-con-icon {
+  width: 42px;
+  height: 42px;
+  margin-top: 38px;
+}
+
+.sec5-con-text1 {
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: normal;
+  font-family: "puvi-Bold";
+  text-align: center;
+}
+
+.sec5-con-text2 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  line-height: normal;
+  font-family: "puvi-Regular";
+}
+
+.sec5-con-box1 {
+  background-color: #e5f2e0;
+}
+
+.sec5-con1-text-box {
+  width: 264px;
+  color: #142a19;
+}
+
+.sec5-con-box2 {
+  background-color: #f5eaf8;
+}
+
+.sec5-con2-text-box {
+  width: 264px;
+  color: #450f3a;
+}
+
+.sec5-con-box3 {
+  background-color: #deedf9;
+}
+
+.sec5-con3-text-box {
+  width: 264px;
+  color: #1f357f;
+}
+
+.sec5-con-box4 {
+  background-color: #eaebfa;
+}
+
+.sec5-con4-text-box {
+  width: 264px;
+  color: #3d2e7c;
+}
+
+.sec5-content2-main-box {
+  margin-top: 100px;
+  border-radius: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #51316a;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.sec5-con2-title {
+  margin-top: 40px;
+  font-size: 48px;
+  color: #ffffff;
+  line-height: normal;
+  text-align: center;
+  font-family: "puvi-Semi-Bold";
+}
+
+.sec5-content2-sub-box {
+  min-height: 103px;
+  height: auto;
+  margin-top: 60px;
+  display: flex;
+  gap: 145px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px 75px;
+}
+
+.sec5-con2-box {
+  width: 286px;
+  height: 103px;
+}
+
+.sec5-con2-box-icon {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.sec5-con2-box-icon span {
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 34.41px;
+  font-family: "puvi-Semi-Bold";
+}
+
+.sec5-con2-box-text {
+  font-size: 18px;
+  margin-top: 25px;
+  line-height: 20.65px;
+  color: #ffffff;
+  font-family: "puvi-Regular";
+}
+
+.sec5-content3-main-box {
+  min-height: 388px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #422c78;
+  border-radius: 65px;
+}
+
+.sec5-content3-sub-box {
+  display: flex;
+  gap: 228px;
+  flex-wrap: wrap;
+  padding-left: 74px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 65px;
+}
+
+.sec5-con3-box1 {
+  width: 558px;
+  min-height: 385px;
+  padding-top: 68px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec5-con3-box1-content1 {
+  line-height: normal;
+  font-size: 42px;
+  color: #ffffff;
+  font-family: "puvi-Semi-Bold";
+}
+
+.sec5-con3-box1-content2 {
+  line-height: normal;
+  font-size: 20px;
+  margin-top: 24px;
+  color: #ffffff;
+  line-height: 22.94px;
+  font-family: "puvi-Regular";
+}
+
+.sec5-con3-box1-content3 {
+  width: 496px;
+  min-width: 386px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.sec5-con3-box1-content3 input {
+  width: 496px;
+  height: 53px;
+  padding-right: 214px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "puvi-Medium";
+  text-indent: 14px;
+  color: #ffffff;
+  outline: none;
+  background-color: #422c78;
+  border: 1px solid #ffffff;
+}
+
+.sec5-con3-box1-content3 input::placeholder {
+  color: #dbdbdb;
+}
+
+.sec5-con3-box1-content3 button {
+  padding: 9px 30px 9px 30px;
+  background-color: #434ee1;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.sec5-con3-box1-content3 button div {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "puvi-Semi-Bold";
+}
+
+.sec5-con3-box2 {
+  height: 387px;
+  border-radius: 0px 65px 65px 0px;
+}
+
+.sec5-con3-box2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 65px 65px 0px;
+}
+
+.warring-text2 {
+  display: none;
+  margin-left: 5px;
+  margin-top: 3px;
+  color: #ff6e57;
+  font-size: 16px;
+  font-family: "puvi-Regular";
+}
+
+/* Footer Style */
+.footer {
+  min-height: 187px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ababab;
 }
 
 .footer-content-box {
@@ -331,13 +650,11 @@ header {
   display: flex;
   gap: 278px;
   justify-content: space-around;
-  /* background-color: pink; */
 }
 
 .footer-content1 {
   width: 386px;
   min-height: 113px;
-  /* background-color: #ff6e57; */
 }
 
 .footer-content1-text {
@@ -357,7 +674,6 @@ header {
 }
 
 .footer-content1-text3 {
-  /* w-287,h-35 */
   width: 287px;
   height: 35px;
   margin-top: 16px;
@@ -370,21 +686,22 @@ header {
 }
 
 .footer-content1-text3 form input {
-  /* width: 70.55%; */
-  /* height: 93%; */
   width: 269px;
   outline: none;
   text-indent: 14px;
+  font-size: 14px;
   border: 1px solid #9095a1;
   border-radius: 4px 0px 0px 4px;
+  font-family: "puvi-Regular";
 }
 
 input[type="text"]::placeholder {
   text-indent: 12px;
+  font-size: 14px;
+  font-family: "puvi-Regular";
 }
 
 .footer-content1-text3 form button {
-  /* w-114,h-37 */
   width: 114px;
   height: 35px;
   color: #ffffff;
@@ -404,7 +721,7 @@ input[type="text"]::placeholder {
   margin-left: 5px;
   margin-top: 3px;
   color: #ff6e57;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "puvi-Regular";
 }
 
@@ -412,21 +729,13 @@ input[type="text"]::placeholder {
   max-width: 570px;
   min-width: 500px;
   min-height: 129px;
-  /* background-color: green; */
-}
-
-.footer-content2-text2 {
-  /* w-105,h-26 */
-  width: 18.4%;
-  height: 4.4vh;
 }
 
 .footer-contact-box {
-  width: 100%;
-  height: 68.5%;
   margin-top: 18px;
   color: #101010;
   display: flex;
+  gap: 46px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -439,9 +748,7 @@ input[type="text"]::placeholder {
 }
 
 .contact-part1 {
-  /* w-173 */
-  width: 30.3%;
-  height: 100%;
+  width: 173px;
 }
 
 .contact-text1 {
@@ -456,9 +763,8 @@ input[type="text"]::placeholder {
 }
 
 .contact-part2 {
-  /* w-351 */
-  width: 61.6%;
-  height: 100%;
+  width: 351px;
+  height: 88px;
 }
 
 .contact-text3 {
@@ -472,15 +778,203 @@ input[type="text"]::placeholder {
   align-items: start;
 }
 
-.bg {
-  /* background-color: red; */
+/* Copy-Rights Style */
+.copyrights {
+  min-height: 27px;
+  display: flex;
+  justify-content: center;
 }
 
+.sub-copyrights {
+  gap: 627px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyrights-text {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #101010;
+  font-weight: 500;
+  font-family: "puvi-Medium";
+}
+
+/* Form successMessage */
+#background-div {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-color: #252526cc;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+#successMessage {
+  z-index: 3;
+  min-height: 154px;
+  border-radius: 24px;
+  transform: scale(0);
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+  padding: 0px 141px;
+  padding-bottom: 34px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-image: url("../media/thanks_big.png");
+}
+
+#successMessage .p1 {
+  margin-top: 82px;
+  font-size: 32px;
+  text-align: center;
+  line-height: normal;
+  font-family: "puvi-Semi-Bold";
+}
+
+#successMessage .p2 {
+  margin-top: 8px;
+  color: #414141;
+  font-size: 22px;
+  text-align: center;
+  line-height: normal;
+  font-family: "puvi-Regular";
+}
+
+/* Media-Quweies Style Start */
+
+/* Get started in 3 easy steps box gap align */
+@media (min-width: 480px) and (max-width: 991px) {
+  .navbar-nav li {
+    margin-left: 0px;
+  }
+}
+
+/* Get started in 3 easy title  &  Ready to revolutionize your customer engagement control box width */
+@media (min-width: 480px) and (max-width: 558px) {
+  .sec5-con2-title {
+    width: 500px;
+  }
+
+  .sec5-con3-box1 {
+    width: 500px;
+  }
+}
+
+/* Get started in 3 easy steps box gap align */
+@media (min-width: 480px) and (max-width: 1297px) {
+  .sec5-content2-sub-box {
+    display: flex;
+    gap: 110px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 110px;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1128px) and (max-width: 1296px) {
+  .sec5-content2-sub-box {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding-left: 17px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1295px) {
+  .sec5-content2-sub-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* Ready to revolutionize your customer engagement control removeing padding */
+@media (min-width: 480px) and (max-width: 1127px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 31px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1046px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* Remove Ready to revolutionize your customer engagement control photo picture border-radious */
+@media (min-width: 480px) and (max-width: 1047px) {
+  .sec5-con3-box2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+
+/* Footer contact Box allign  */
 @media (min-width: 480px) and (max-width: 1233px) {
   .footer-content-box {
     margin-top: 24px;
     display: flex;
     gap: 50px;
+    justify-content: space-around;
+  }
+}
+
+/* Footer copyrights allign */
+@media (min-width: 480px) and (max-width: 1233px) {
+  .sub-copyrights {
+    display: flex;
+    gap: 400px;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1002px) {
+  .sub-copyrights {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 615px) {
+  .sub-copyrights {
+    display: flex;
+    gap: 10px;
     justify-content: space-around;
   }
 }

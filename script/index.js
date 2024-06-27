@@ -1,9 +1,16 @@
-// JavaScript code
+// FirstInput
+var firstInput = document.getElementById("firstInput");
+var firstAlert = document.getElementById("alertText1");
 
-var background = document.getElementById("background-div");
-var successMessage = document.getElementById("successMessage");
-var body = document.getElementById("body");
+// SecoundInput
+var secoundtInput = document.getElementById("secoundInput");
+var secoundAlert = document.getElementById("alertText2");
 
+// ThirdInput
+var thirdInput = document.getElementById("thirdInput");
+var thirdInputAlert = document.getElementById("alertText3");
+
+// a Tag Smooth Scroll
 document.querySelectorAll("a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -13,38 +20,108 @@ document.querySelectorAll("a").forEach((anchor) => {
   });
 });
 
-// function showSuccessMessage(e) {
-//   e.preventDefault();
+// FirstInput Sumbit Function
+function successMessage1(e) {
+  e.preventDefault();
 
-//   console.log("clicked");
+  var inputValue = firstInput.value;
 
-//   var successMessage = document.getElementById("successMessage");
+  function validMail(inputValue) {
+    return validator.isEmail(inputValue);
+  }
 
-//   // Clear input fields
-//   var inputs = document.querySelectorAll(
-//     "input[type='text'], input[type='email'], input[type='password'], textarea"
-//   );
-//   inputs.forEach(function (input) {
-//     input.value = "";
-//   });
+  if (!validMail(inputValue)) {
+    firstInput.style.border = "2px solid #ff6e57";
+    firstAlert.style.display = "block";
+    return;
+  }
 
-//   successMessage.style.transform = "scale(1)";
-//   background.style.transform = "scalex(1)";
-//   body.style.overflow = "hidden";
+  firstInput.value = "";
+  openWish();
+}
 
-//   // Close Message
-//   setTimeout(function () {
-//     successMessage.style.transform = "scale(0)";
+// FirstInput Style Reset
+function resetStyle1() {
+  firstInput.style.border = "1px solid #9b9eae";
+  firstAlert.style.display = "none";
+}
 
-//     setTimeout(function () {
-//       background.style.transform = "scaleX(0)";
-//       body.style.overflow = "auto";
-//     }, 500);
-//   }, 2500);
-// }
+// SecoundInput Sumbit Function
+function successMessage2(e) {
+  e.preventDefault();
 
-// function smoothScrollTo(targetId) {
-//   document.getElementById(targetId).scrollIntoView({
-//     behavior: "auto",
-//   });
-// }
+  var inputValue = secoundtInput.value;
+
+  function validMail(inputValue) {
+    return validator.isEmail(inputValue);
+  }
+
+  if (!validMail(inputValue)) {
+    secoundtInput.style.border = "2px solid #ff6e57";
+    secoundAlert.style.display = "block";
+    return;
+  }
+
+  secoundtInput.value = "";
+  openWish();
+}
+
+// SecoundInput Style Reset
+function resetStyle2() {
+  secoundtInput.style.border = "1px solid #FFFFFF";
+  secoundAlert.style.display = "none";
+}
+
+// ThirdInput Sumbit Function
+function successMessage3(e) {
+  e.preventDefault();
+
+  var inputValue = thirdInput.value;
+
+  function validMail(inputValue) {
+    return validator.isEmail(inputValue);
+  }
+
+  if (!validMail(inputValue)) {
+    thirdInput.style.border = "2px solid #ff6e57";
+    thirdInputAlert.style.display = "block";
+    return;
+  }
+
+  thirdInput.value = "";
+  openWish();
+}
+
+// ThirdInput Style Reset
+function resetStyle3() {
+  thirdInput.style.border = "1px solid #9095a1";
+  thirdInputAlert.style.display = "none";
+}
+
+// Wish Open Common Function
+function openWish() {
+  var background = document.getElementById("background-div");
+  var successMessage = document.getElementById("successMessage");
+  var body = document.getElementById("body");
+
+  successMessage.style.transform = "scale(1)";
+  background.style.transform = "scalex(1)";
+  body.style.overflow = "hidden";
+  smoothScrollTo("background-div");
+
+  setTimeout(function () {
+    successMessage.style.transform = "scale(0)";
+
+    setTimeout(function () {
+      background.style.transform = "scaleX(0)";
+      body.style.overflow = "auto";
+    }, 500);
+  }, 2500);
+}
+
+// Reach to Wish-Div
+function smoothScrollTo(targetId) {
+  document.getElementById(targetId).scrollIntoView({
+    behavior: "auto",
+  });
+}
