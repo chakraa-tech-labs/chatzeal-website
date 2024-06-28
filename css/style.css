@@ -726,11 +726,6 @@ header {
 
 .footer-con3-text3-box {
   margin-top: 31px;
-  font-family: "puvi-Regular";
-}
-
-.footer-form {
-  font-family: "puvi-Regular";
 }
 
 .footer-form form {
@@ -856,6 +851,7 @@ header {
 #background-div-2 {
   position: absolute;
   bottom: 0px;
+  height: 100vh;
   background-color: #252526cc;
   z-index: 2;
   display: flex;
@@ -1252,7 +1248,6 @@ header {
   .sec5-content2-sub-box {
     gap: 45px;
     padding: 0px 0px;
-    background-color: red;
   }
 
   .sec5-con2-box-icon span {
@@ -1263,16 +1258,146 @@ header {
     font-size: 16px;
   }
 
-  /* .sec5-content3-main-box {
+  .sec5-content3-main-box {
     width: 332px;
     height: 336px;
-  } */
+  }
 
-  .sec5-content3-main-box {
+  .sec5-content3-sub-box {
+    padding-left: 0px;
+  }
+
+  .sec5-con3-box1 {
+    width: 284px;
+    min-height: 224px;
+    padding: 0px;
+  }
+
+  .sec5-con3-box1-content1 {
+    font-size: 24px;
+  }
+
+  .sec5-con3-box1-content2 {
+    font-size: 14px;
+  }
+
+  .sec5-con3-box1-content3 {
+    width: 284px;
+    min-width: 284px;
+    height: 38px;
+  }
+
+  .sec5-con3-box1-content3 input {
+    width: 284px;
+    height: 38px;
+    padding-right: 128px;
+    font-size: 14px;
+  }
+
+  .sec5-con3-box1-content3 button {
+    width: 105px;
+    height: 30px;
+    padding: 0px;
+    top: 4px;
+  }
+
+  .sec5-con3-box1-content3 button div {
+    font-size: 12px;
+  }
+
+  .warring-text2 {
+    font-size: 14px;
+  }
+
+  .sec5-con3-box2 {
     display: none;
   }
 
-  #contact {
-    display: none;
+  .footer-title {
+    width: 360px;
+    font-size: 26px;
+  }
+
+  .footer-content-box {
+    width: 360px;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  .footer-con-text1 {
+    font-size: 16px;
+  }
+  .footer-con-text2 {
+    font-size: 14px;
+  }
+
+  .footer-form form {
+    width: 332px;
+    height: 75px;
+  }
+
+  #thirdInput {
+    width: 217px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  #thirdInput ::placeholder {
+    font-size: 12px;
+  }
+
+  .footer-form form button {
+    width: 114px;
+    height: 35px;
+  }
+
+  .footer-form form button div {
+    font-size: 12px;
+  }
+
+  .sub-copyrights {
+    gap: 26px;
+  }
+
+  .copyrights-text {
+    font-size: 6px;
+  }
+
+  #background-div {
+    min-height: 640px;
+    max-height: 932px;
+  }
+
+  #successMessage {
+    padding: 0px 20px;
+  }
+
+  #successMessage .p1 {
+    margin-top: 60px;
+    min-width: 100px;
+    font-size: 20px;
+  }
+
+  #successMessage .p2 {
+    font-size: 14px;
+  }
+
+  #background-div-2 {
+    min-height: 640px;
+    max-height: 932px;
+  }
+
+  #successMessage2 {
+    padding: 0px 20px;
+  }
+
+  #successMessage2 .p1 {
+    margin-top: 60px;
+    min-width: 100px;
+    font-size: 20px;
+  }
+
+  #successMessage2 .p2 {
+    font-size: 14px;
   }
 }
