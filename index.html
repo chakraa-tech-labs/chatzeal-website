@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatzeal - Drive your conversations to conversions</title>
 
+    <!-- Css Style Sheet -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Bootstarp Css Link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstarp Script Link -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body id="body">
+
+
+    <div class="container-fluid" id="background-div">
+      <div id="successMessage">
+        <div>
+          <div class="p1">Thank you for your interest.</div>
+          <div class="p2">We will update you through email.</div>
+        </div>
+      </div>
+    </div>
+
+    
+
     <header class="container-fluid">
       <nav class="container navbar navbar-light navbar-expand-lg">
         <a href="" class="navbar-brand">Chatzeal</a>
@@ -41,15 +58,15 @@
             </li>
 
             <li class="nav-item">
-              <a href="" class="nav-link">Solutions</a>
+              <a href="#solutions" class="nav-link">Solutions</a>
             </li>
 
             <li class="nav-item">
-              <a href="" class="nav-link">Get Started</a>
+              <a href="#get_Started" class="nav-link">Get Started</a>
             </li>
 
             <li class="nav-item">
-              <a href="" class="nav-link">Contact Us</a>
+              <a href="#contact" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -65,10 +82,14 @@
               Transform your website visitors into loyal customers
             </div>
             <div class="content-text3">
-              <form action="" onsubmit="showSuccessMessage(event)">
-                <input placeholder="Enter your email" id="section1_input" />
+              <form action="" onsubmit="successMessage1(event)">
+                <input
+                  placeholder="Enter your email"
+                  id="firstInput"
+                  oninput="resetStyle1()"
+                />
                 <button class="form"><div>Join the waitlist</div></button>
-                <p class="warring-text" id="warring-text">Enter valid email</p>
+                <p class="warring-text" id="alertText1">Enter valid email</p>
               </form>
             </div>
           </div>
@@ -88,7 +109,7 @@
             <div class="sec2-box sec2-box1">
               <div class="sec2-sub-box">
                 <div class="sec2-box-icon">
-                  <img src="icons/message.svg" />
+                  <img src="icons/section2_Msg.svg" />
                 </div>
                 <div class="sec2-box-text">
                   Streamlined Customer communication platform
@@ -99,7 +120,7 @@
             <div class="sec2-box sec2-box2">
               <div class="sec2-sub-box">
                 <div class="sec2-box-icon">
-                  <img src="icons/handshake.svg" />
+                  <img src="icons/section2_Heart.svg" />
                 </div>
                 <div class="sec2-box-text sec2-box-text2">
                   Automation for Lead nurturing & Customer engagement
@@ -110,7 +131,7 @@
             <div class="sec2-box sec2-box3">
               <div class="sec2-sub-box">
                 <div class="sec2-box-icon">
-                  <img src="icons/Bulb.svg" />
+                  <img src="icons/section2_Blub.svg" />
                 </div>
                 <div class="sec2-box-text sec2-box-text3">
                   Comprehensive Analytics & Insights
@@ -204,74 +225,372 @@
         </div>
       </div>
 
-      <!-- <div class="container-fluid section4" id="features">
+      <div class="container-fluid section4" id="features">
         <div class="row sec4-title">Key features</div>
 
-        <div class="row sec3-content"></div>
-      </div> -->
-    </section>
+        <div class="row sec4-content">
+          <div class="sec4-con-box sec4-con-box1">
+            <div class="sec4-con-sub-box sec4-con-sub-box1">
+              <div class="sec4-con-box-img sec4-con-box1-img">
+                <img src="media/key_features1.png" alt="" />
+              </div>
 
-    <footer>
-      <div class="footer container-fluid" id="contact">
-        <div class="row footer-content-box">
-          <div class="footer-content1">
-            <div class="footer-content1-text footer-content1-text1">
-              Subscribe to our newsletter
-            </div>
-            <div class="footer-content-text footer-content1-text2">
-              For product announcements and exclusive insights
-            </div>
-            <div class="footer-content1-text3">
-              <form action="" onsubmit="showSuccessMessage3(event)">
-                <input placeholder="Enter your email" id="footer_input" />
-                <button>
-                  <div>Subscribe</div>
-                </button>
-                <p class="warring-text3" id="warring-text3">
-                  Enter valid email
-                </p>
-              </form>
+              <div class="sec4-con-box-text sec4-con-box1-text">
+                <div class="sec4-con-box-text-1 sec4-con-box1-text-1">
+                  Centralized contact management
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box1-text-2">
+                  Segment and manage all your customer contacts seamlessly from
+                  <!-- <br /> -->
+                  a single platform.
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="footer-content2">
-            <div class="footer-content1-text footer-content2-text1">
-              Contact us
-            </div>
-            <div class="footer-contact-box">
-              <div class="contact-part1">
-                <div class="contact-text1">
-                  <img src="icons/footer-message.svg" alt="" />
-                  <span>contact@chakraa.io</span>
+          <div class="sec4-con-box sec4-con-box2">
+            <div class="sec4-con-sub-box sec4-con-sub-box2">
+              <div class="sec4-con-box-img sec4-con-box1-img">
+                <img src="media/key_features2.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box2-text">
+                <div class="sec4-con-box-text-1 sec4-con-box2-text-1">
+                  Automated lead nurturing
                 </div>
-                <div class="contact-text2">
-                  <img src="icons/footer-phone.svg" alt="" />
-                  <span>+91 9876543210</span>
+                <div class="sec4-con-box-text-2 sec4-con-box2-text-2">
+                  Define automation rules to qualify leads, trigger automatic
+                  <!-- <br /> -->
+                  conversations, schedule follow-up tasks to ensure all your
+                  leads
+                  <!-- <br /> -->
+                  are attended.
                 </div>
               </div>
-              <div class="contact-part2">
-                <div class="contact-text3">
-                  <img src="icons/footer-location.svg" alt="" />
-                  <span
-                    >Chakraa Universal Tech Labs Private Limited, S.No.. 35/31,
-                    Chitragupta Nagar, Urapakkam, Chennai, Tamil Nadu, India -
-                    603210.</span
-                  >
+            </div>
+          </div>
+
+          <div class="sec4-con-box sec4-con-box3">
+            <div class="sec4-con-sub-box sec4-con-sub-box3">
+              <div class="sec4-con-box-img sec4-con-box3-img">
+                <img src="media/key_features3.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box3-text">
+                <div class="sec4-con-box-text-1 sec4-con-box3-text-1">
+                  Integrate with CRM and other tools
                 </div>
-                <div class="contact-text4">
-                  <img src="icons/footer-tax.svg" alt="" />
-                  <span>GST IN : 33AALCC2177J1ZJ</span>
+                <div class="sec4-con-box-text-2 sec4-con-box3-text-2">
+                  Use smart automation to handle common queries
+                  <!-- <br /> -->
+                  and free up your team’s time.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec4-con-box sec4-con-box4">
+            <div class="sec4-con-sub-box sec4-con-sub-box4">
+              <div class="sec4-con-box-img sec4-con-box4-img">
+                <img src="media/key_features4.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box4-text">
+                <div class="sec4-con-box-text-1 sec4-con-box4-text-1">
+                  Message templates and campaigns
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box4-text-2">
+                  Draft message templates for consistent communication, schedule
+                  <!-- <br /> -->
+                  campaigns and broadcast messages to engage with your customers
+                  <!-- <br /> -->
+                  at the right time.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec4-con-box sec4-con-box5">
+            <div class="sec4-con-sub-box sec4-con-sub-box5">
+              <div class="sec4-con-box-img sec4-con-box5-img">
+                <img src="media/key_features5.png" alt="" />
+              </div>
+              <div class="sec4-con-box-text sec4-con-box5-text">
+                <div class="sec4-con-box-text-1 sec4-con-box5-text-1">
+                  Automated chat assignment & tracking
+                </div>
+                <div class="sec4-con-box-text-2 sec4-con-box5-text-2">
+                  Automatically assign customer chats to your team members to
+                  <!-- <br /> -->
+                  effectively track and ensure efficient handling of customer
+                  <!-- <br /> -->
+                  queries and follow-ups.
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
 
-    <!-- <h1 class="bg">-</h1> -->
+      <div class="container-fluid section5" id="solutions">
+        <div class="row sec5-title">Solutions</div>
+
+        <div class="row sec5-content">
+          <div class="sec5-content1-main-box">
+            <div class="sec5-content1-sub-box">
+              <div class="sec5-con-box sec5-con-box1">
+                <div class="sec5-con-icon sec5-con1-icon">
+                  <img src="icons/solution-contacts.svg" alt="" />
+                </div>
+
+                <div class="sec5-con1-text-box">
+                  <div class="sec5-con-text1 sec5-con1-text1">
+                    One-Click Chat
+                  </div>
+
+                  <div class="sec5-con-text2 sec5-con1-text2">
+                    Simplify the contact process with a
+                    <br />
+                    single click to start a
+                    <br />
+                    WhatsApp chat.
+                  </div>
+                </div>
+              </div>
+
+              <div class="sec5-con-box sec5-con-box2">
+                <div class="sec5-con-icon sec5-con2-icon">
+                  <img src="icons/solution-speaker.svg" alt="" />
+                </div>
+
+                <div class="sec5-con2-text-box">
+                  <div class="sec5-con-text1 sec5-con2-text1">
+                    24/7 Availability
+                  </div>
+                  <div class="sec5-con-text2 sec5-con2-text2">
+                    Keep the conversation going, <br />
+                    even when your team <br />is offline.
+                  </div>
+                </div>
+              </div>
+
+              <div class="sec5-con-box sec5-con-box3">
+                <div class="sec5-con-icon sec5-con2-icon">
+                  <img src="icons/solution-check.svg" alt="" />
+                </div>
+
+                <div class="sec5-con3-text-box">
+                  <div class="sec5-con-text1 sec5-con3-text1">
+                    Secure & Private
+                  </div>
+
+                  <div class="sec5-con-text2 sec5-con3-text2">
+                    Ensure all communications are secure and compliant with
+                    <br />
+                    privacy standards.
+                  </div>
+                </div>
+              </div>
+
+              <div class="sec5-con-box sec5-con-box4">
+                <div class="sec5-con-icon sec5-con2-icon">
+                  <img src="icons/solution-plug.svg" alt="" />
+                </div>
+
+                <div class="sec5-con4-text-box">
+                  <div class="sec5-con-text1 sec5-con4-text1">
+                    Automated Responses
+                  </div>
+
+                  <div class="sec5-con-text2 sec5-con4-text2">
+                    Use smart automation to handle <br />
+                    common queries and free up your <br />
+                    team’s time.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec5-content2-main-box" id="get_Started">
+            <div class="sec5-con2-title">Get started in 3 easy steps</div>
+
+            <div class="sec5-content2-sub-box">
+              <div class="sec5-con2-box sec5-con2-box1">
+                <div class="sec5-con2-box-icon sec5-con2-box1-icon">
+                  <img src="icons/solution-con2-puzzle.svg" alt="" />
+                  <span>Integrate</span>
+                </div>
+
+                <div class="sec5-con2-box-text sec5-con2-box-text1">
+                  Add our widget to your website with a simple code snippet.
+                </div>
+              </div>
+
+              <div class="sec5-con2-box sec5-con2-box2">
+                <div class="sec5-con2-box-icon sec5-con2-box2-icon">
+                  <img src="icons/solution-con2-message.svg" alt="" />
+                  <span>Engage</span>
+                </div>
+
+                <div class="sec5-con2-box-text sec5-con2-box-text2">
+                  Visitors click to chat, initiating a conversation via
+                  WhatsApp.
+                </div>
+              </div>
+
+              <div class="sec5-con2-box sec5-con2-box3">
+                <div class="sec5-con2-box-icon sec5-con2-box3-icon">
+                  <img src="icons/solution-con2-serves.svg" alt="" />
+                  <span>Convert</span>
+                </div>
+
+                <div class="sec5-con2-box-text sec5-con2-box-text3">
+                  Provide personalized support and turn interactions into
+                  conversions.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec5-content3-main-box">
+            <div class="sec5-content3-sub-box">
+              <div class="sec5-con3-box sec5-con3-box1">
+                <div class="sec5-con3-box1-content-box">
+                  <div class="sec5-con3-box1-content1">
+                    Ready to revolutionize your customer engagement?
+                  </div>
+                  <div class="sec5-con3-box1-content2">
+                    Join now and see the difference our WhatsApp Chat
+                    Integration can make for your business.
+                  </div>
+                  <div class="sec5-con3-box1-content3">
+                    <form action="" onsubmit="successMessage2(event)">
+                      <input
+                        placeholder="Enter your email"
+                        id="secoundInput"
+                        oninput="resetStyle2()"
+                      />
+                      <button class="form"><div>Join the waitlist</div></button>
+                      <p class="warring-text2" id="alertText2">
+                        Enter valid email
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="sec5-con3-box sec5-con3-box2">
+                <img src="media/customer_engagement_box.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer container-fluid " id="contact">
+        <div class="footer-title row">A product of Chakraa Tech Labs</div>
+
+        <div class="footer-content-box row px-1">
+          <div class="footer-content1">
+            <div class="footer-con-text1 footer-con1-text1">INDIA</div>
+
+            <div class="footer-con-text2-box footer-con1-text2-box">
+              <img src="icons/footer-location.svg" alt="" />
+              <div class="footer-con-text2">
+                Chakraa Universal Tech Labs Private Limited, 35/31,
+                Chitragupta Nagar, Urapakkam, Chennai, Tamil Nadu -
+                603210.
+              </div>
+            </div>
+
+            <div class="footer-con-text3-box footer-con1-text3-box">
+              <img src="icons/footer-tax.svg" alt="" />
+              <div class="footer-con-text2">GST IN : 33AALCC2177J1ZJ</div>
+            </div>
+          </div>
+          <div class="footer-content2">
+            <div class="footer-con-text1 footer-con2-text1">USA</div>
+            <div class="footer-con-text2-box footer-con2-text2-box">
+              <img src="icons/footer-location.svg" alt="" />
+              <div class="footer-con-text2">
+                Chakraa Tech Labs LLC,
+                <br> 
+                701, Tillery Street Unit 12 - 1775, 
+                <br>
+                 Austin, Texas - 78702.
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-content3">
+            <div class="footer-con-text1 footer-con3-text1">Contact us</div>
+            <div class="footer-con-text2-box footer-con3-text2-box">
+               <div class="contact-detail">
+                <img src="icons/footer-message.svg" alt="" />
+                <div class="footer-con-text2">
+                  contact@chakraa.io
+                </div>
+               </div>
+
+               <div class="contact-detail">
+                <img src="icons/footer-phone.svg" alt="" />
+                <div class="footer-con-text2">
+                  +91 9876543210
+                </div>
+               </div>
+              </div>
+
+            <div class="footer-con3-text3-box">
+
+              <div class="footer-con-text1 footer-con3-text1">
+                Subscribe to our newsletter
+              </div>
+
+              <div class="footer-form">
+                <form action=" " onsubmit="successMessage3(event)">
+                  <input
+                    placeholder="Enter your email"
+                    id="thirdInput"
+                    oninput="resetStyle3()"
+                  />
+                  <button>
+                    <div>Subscribe</div>
+                  </button>
+                </form>
+                <p class="warring-text3" id="alertText3">Enter valid email</p>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="container-fluid copyrights">
+        <div class="row sub-copyrights">
+          <div class="copyrights-text copyrights-text1">
+            © 2024 Chakraa Universal Tech Labs Private Limited | All rights
+            reserved
+          </div>
+          <div class="copyrights-text copyrights-text2">
+            Terms & Conditions | Privacy Policy
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid" id="background-div-2">
+        <div id="successMessage2">
+          <div>
+            <div class="p1">Thank you for your interest.</div>
+            <div class="p2">We will update you through email.</div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
   </body>
 
   <!-- Script -->
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
   <script src="script/index.js"></script>
 </html>
