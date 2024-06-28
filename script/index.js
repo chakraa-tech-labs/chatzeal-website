@@ -119,6 +119,27 @@ function openWish() {
   }, 2500);
 }
 
+// Wish Open Common Function
+// function openWish2() {
+//   var background = document.getElementById("background-div-2");
+//   var successMessage = document.getElementById("successMessage2");
+//   var body = document.getElementById("body");
+
+//   successMessage.style.transform = "scale(1)";
+//   background.style.transform = "scalex(1)";
+//   body.style.overflow = "hidden";
+//   smoothScrollTo("background-div-2");
+
+//   setTimeout(function () {
+//     successMessage.style.transform = "scale(0)";
+
+//     setTimeout(function () {
+//       background.style.transform = "scaleX(0)";
+//       body.style.overflow = "auto";
+//     }, 500);
+//   }, 2500);
+// }
+
 // Reach to Wish-Div
 function smoothScrollTo(targetId) {
   document.getElementById(targetId).scrollIntoView({

@@ -849,6 +849,54 @@ header {
   font-family: "puvi-Regular";
 }
 
+#contact {
+  position: relative;
+}
+
+#background-div-2 {
+  position: absolute;
+  bottom: 0px;
+  background-color: #252526cc;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+#successMessage2 {
+  z-index: 3;
+  min-height: 154px;
+  border-radius: 24px;
+  transform: scale(0);
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+  padding: 0px 141px;
+  padding-bottom: 34px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-image: url("../media/thanks_big.png");
+}
+
+#successMessage2 .p1 {
+  margin-top: 82px;
+  font-size: 32px;
+  text-align: center;
+  line-height: normal;
+  font-family: "puvi-Semi-Bold";
+}
+
+#successMessage2 .p2 {
+  margin-top: 8px;
+  color: #414141;
+  font-size: 22px;
+  text-align: center;
+  line-height: normal;
+  font-family: "puvi-Regular";
+}
+
 /* Media-Queries Style Start */
 
 /* Get started in 3 easy steps box gap align */
@@ -1194,8 +1242,31 @@ header {
   }
 
   .sec5-content2-main-box {
-    display: none;
+    width: 332px;
   }
+
+  .sec5-con2-title {
+    font-size: 24px;
+  }
+
+  .sec5-content2-sub-box {
+    gap: 45px;
+    padding: 0px 0px;
+    background-color: red;
+  }
+
+  .sec5-con2-box-icon span {
+    font-size: 20px;
+  }
+
+  .sec5-con2-box-text {
+    font-size: 16px;
+  }
+
+  /* .sec5-content3-main-box {
+    width: 332px;
+    height: 336px;
+  } */
 
   .sec5-content3-main-box {
     display: none;
