@@ -77,6 +77,7 @@ header {
   display: flex;
   align-items: end;
   justify-content: space-around;
+  padding: 0px 15px;
 }
 
 .sec1-content-1 {
@@ -377,6 +378,7 @@ header {
   align-items: center;
   padding-bottom: 100px;
   background-color: #f9f9fe;
+  padding: 0px 25px;
 }
 
 .sec5-content {
@@ -902,14 +904,38 @@ header {
   }
 }
 
+/*Struggling to engage your website visitors? gap align */
+
+@media (min-width: 480px) and (max-width: 1128px) {
+  .sec3-content1 {
+    gap: 45px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 883px) {
+  .sec3-content2 {
+    margin-top: 45px;
+    gap: 45px;
+  }
+}
+
 /* Get started in 3 easy title  &  Ready to revolutionize your customer engagement control box width */
 @media (min-width: 480px) and (max-width: 558px) {
+  .section5 {
+    padding: 0px 40px;
+  }
+
   .sec5-con2-title {
     width: 500px;
   }
 
   .sec5-con3-box1 {
     width: 500px;
+  }
+
+  .sec5-con3-box2 {
+    height: 340px;
+    border-radius: 0px 65px 65px 0px;
   }
 }
 
@@ -953,9 +979,13 @@ header {
 @media (min-width: 480px) and (max-width: 1295px) {
   .sec5-content2-sub-box {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .sec5-con2-box-text {
+    margin-top: 12px;
   }
 }
 
