@@ -43,11 +43,24 @@ header {
 }
 
 .navbar .navbar-brand {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  /* background-color: rgba(255, 0, 0, 0.336); */
+}
+
+.navbar .navbar-brand div {
   color: #434ee1 !important;
   font-size: 28px;
   font-weight: bold;
   font-family: "puvi-Regular";
   cursor: default;
+}
+
+.navbar .navbar-brand img {
+  width: 35px;
+  height: 35px;
+  /* background-color: pink; */
 }
 
 .navbar-nav .nav-link {
@@ -539,7 +552,7 @@ header {
 
 .sec5-content3-sub-box {
   display: flex;
-  gap: 228px;
+  gap: 200px;
   flex-wrap: wrap;
   padding-left: 74px;
   align-items: center;
@@ -549,8 +562,9 @@ header {
 
 .sec5-con3-box1 {
   width: 558px;
-  min-height: 385px;
-  padding-top: 68px;
+  /* min-height: 385px; */
+  padding-bottom: 60px;
+  padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -563,12 +577,29 @@ header {
 }
 
 .sec5-con3-box1-content2 {
-  line-height: normal;
   font-size: 20px;
   margin-top: 24px;
   color: #ffffff;
   line-height: 22.94px;
   font-family: "puvi-Regular";
+  /* background-color: red; */
+}
+
+.sec5-con3-box1-content4 {
+  font-size: 16px;
+  color: white;
+  margin-top: 20px;
+  line-height: 22.94px;
+  font-family: "puvi-Regular";
+}
+
+.sec5-con3-box1-content4 a {
+  color: white;
+  text-decoration: underline;
+}
+
+.sec5-con3-box1-content4 a:hover {
+  color: white;
 }
 
 .sec5-con3-box1-content3 {
@@ -613,7 +644,7 @@ header {
 }
 
 .sec5-con3-box2 {
-  height: 387px;
+  height: 411px;
   border-radius: 0px 65px 65px 0px;
 }
 
@@ -782,13 +813,13 @@ header {
 .copyrights {
   min-height: 27px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .sub-copyrights {
-  gap: 627px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .copyrights-text {
@@ -897,7 +928,7 @@ header {
 
 /* Media-Queries Style Start */
 
-/* Get started in 3 easy steps box gap align */
+/* Menu Bar gap align */
 @media (min-width: 480px) and (max-width: 991px) {
   .navbar-nav li {
     margin-left: 0px;
@@ -905,7 +936,6 @@ header {
 }
 
 /*Struggling to engage your website visitors? gap align */
-
 @media (min-width: 480px) and (max-width: 1128px) {
   .sec3-content1 {
     gap: 45px;
@@ -940,7 +970,7 @@ header {
 }
 
 /* Get started in 3 easy steps box gap align */
-@media (min-width: 480px) and (max-width: 1297px) {
+/* @media (min-width: 480px) and (max-width: 1297px) {
   .sec5-content2-sub-box {
     display: flex;
     gap: 110px;
@@ -956,9 +986,9 @@ header {
     align-items: center;
     justify-content: space-around;
   }
-}
+} */
 
-@media (min-width: 1128px) and (max-width: 1296px) {
+/* @media (min-width: 1128px) and (max-width: 1296px) {
   .sec5-content2-sub-box {
     display: flex;
     gap: 80px;
@@ -974,9 +1004,9 @@ header {
     align-items: center;
     justify-content: space-around;
   }
-}
+} */
 
-@media (min-width: 480px) and (max-width: 1295px) {
+/* @media (min-width: 480px) and (max-width: 1295px) {
   .sec5-content2-sub-box {
     display: flex;
     gap: 25px;
@@ -987,13 +1017,90 @@ header {
   .sec5-con2-box-text {
     margin-top: 12px;
   }
-}
+} */
 
 /* Ready to revolutionize your customer engagement control removeing padding */
-@media (min-width: 480px) and (max-width: 1127px) {
+@media (min-width: 480px) and (max-width: 1364px) {
   .sec5-content3-sub-box {
     display: flex;
-    gap: 31px;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* @media (min-width: 480px) and (max-width: 1340px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1312px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+} */
+
+@media (min-width: 480px) and (max-width: 1259px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1209px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* @media (min-width: 480px) and (max-width: 1182px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1132px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1112px) {
+  .sec5-content3-sub-box {
+    display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     padding-left: 20px;
     align-items: center;
@@ -1010,10 +1117,10 @@ header {
     align-items: center;
     justify-content: space-around;
   }
-}
+} */
 
 /* Remove Ready to revolutionize your customer engagement control photo picture border-radious */
-@media (min-width: 480px) and (max-width: 1047px) {
+@media (min-width: 480px) and (max-width: 1189px) {
   .sec5-con3-box2 img {
     width: 100%;
     height: 100%;
@@ -1066,8 +1173,8 @@ header {
 
 /* Phone Size Media-Queries   */
 @media (min-width: 360px) and (max-width: 430px) {
-  .navbar .navbar-brand {
-    font-size: 26px;
+  .navbar .navbar-brand div {
+    font-size: 24px;
   }
 
   .navbar-nav .nav-link {
@@ -1337,6 +1444,10 @@ header {
 
   .warring-text2 {
     font-size: 14px;
+  }
+
+  .sec5-con3-box1-content4 {
+    font-size: 12px;
   }
 
   .sec5-con3-box2 {
