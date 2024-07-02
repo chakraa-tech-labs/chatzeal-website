@@ -1424,7 +1424,6 @@ header {
 
   .footer-form form {
     width: 332px;
-    height: 75px;
   }
 
   #thirdInput {
@@ -1444,6 +1443,10 @@ header {
 
   .footer-form form button div {
     font-size: 12px;
+  }
+
+  .warring-text3 {
+    font-size: 14px;
   }
 
   .sub-copyrights {
