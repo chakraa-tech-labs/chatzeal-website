@@ -124,7 +124,7 @@ function openWish() {
       background.style.transform = "scaleX(0)";
       body.style.overflow = "auto";
     }, 500);
-  }, 2500);
+  }, 1500);
 }
 
 // Wish Open Common Function
@@ -145,7 +145,7 @@ function openWish2() {
       background.style.transform = "scaleX(0)";
       body.style.overflow = "auto";
     }, 500);
-  }, 2500);
+  }, 1500);
 }
 
 // Reach to Wish-Div
