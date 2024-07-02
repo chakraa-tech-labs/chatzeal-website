@@ -723,13 +723,19 @@ header {
 .footer-con-text2-box img {
   width: 18px;
   height: 18px;
+  margin-top: 2px;
 }
 
-.footer-con-text2 {
+.footer-con-text2 a {
   font-size: 16px;
   color: #101010;
   line-height: normal;
+  text-decoration: underline;
   font-family: "puvi-Regular";
+}
+
+.footer-con-text2 a:hover {
+  color: #101010;
 }
 
 .footer-con-text3-box {
