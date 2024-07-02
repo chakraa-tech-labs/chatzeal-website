@@ -11,10 +11,18 @@ var thirdInput = document.getElementById("thirdInput");
 var thirdInputAlert = document.getElementById("alertText3");
 
 // a Tag Smooth Scroll
-document.querySelectorAll("a").forEach((anchor) => {
+document.querySelectorAll("nav a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
+    const target = document.querySelector(this.getAttribute("href"));
+    const offset = 68;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = target.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
       behavior: "smooth",
     });
   });
@@ -116,7 +124,7 @@ function openWish() {
       background.style.transform = "scaleX(0)";
       body.style.overflow = "auto";
     }, 500);
-  }, 2500);
+  }, 1500);
 }
 
 // Wish Open Common Function
@@ -137,7 +145,7 @@ function openWish2() {
       background.style.transform = "scaleX(0)";
       body.style.overflow = "auto";
     }, 500);
-  }, 2500);
+  }, 1500);
 }
 
 // Reach to Wish-Div
