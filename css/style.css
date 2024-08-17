@@ -33,6 +33,7 @@
   display: none;
   scroll-behavior: smooth;
 }
+
 /* Header Style */
 header {
   position: sticky;
@@ -54,7 +55,6 @@ header {
   font-size: 28px;
   font-weight: bold;
   font-family: "puvi-Regular";
-  cursor: default;
 }
 
 .navbar .navbar-brand img {
@@ -682,7 +682,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #ababab;
+  /* border-bottom: 1px solid #ababab; */
 }
 
 .footer-title {
@@ -833,11 +833,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: red; */
 }
 
 .sub-copyrights {
+  /* width: 97%; */
   display: flex;
+  gap: 627px;
   align-items: center;
+  justify-content: space-between;
+  /* background-color: pink; */
 }
 
 .copyrights-text {
@@ -847,6 +852,12 @@ header {
   color: #101010;
   font-weight: 500;
   font-family: "puvi-Medium";
+}
+
+.copyrights-text2 {
+  display: flex;
+  gap: 3px;
+  /* background-color: grey; */
 }
 
 /* Form successMessage */
@@ -1108,30 +1119,29 @@ header {
 }
 
 /* Footer copyrights allign */
-
-/* @media (min-width: 480px) and (max-width: 1233px) {
+@media (min-width: 480px) and (max-width: 1290px) {
   .sub-copyrights {
     display: flex;
-    gap: 400px;
+    gap: 500px;
     justify-content: space-around;
   }
 }
 
-@media (min-width: 480px) and (max-width: 1002px) {
+@media (min-width: 480px) and (max-width: 1240px) {
   .sub-copyrights {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: space-around;
   }
 }
 
-@media (min-width: 480px) and (max-width: 615px) {
+@media (min-width: 480px) and (max-width: 758px) {
   .sub-copyrights {
     display: flex;
     gap: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-} */
+}
 
 /* Phone Size Media-Queries   */
 @media (min-width: 360px) and (max-width: 430px) {
@@ -1462,7 +1472,8 @@ header {
   }
 
   .sub-copyrights {
-    gap: 26px;
+    gap: 7px;
+    justify-content: start;
   }
 
   .copyrights-text {
