@@ -11,7 +11,7 @@ var thirdInput = document.getElementById("thirdInput");
 var thirdInputAlert = document.getElementById("alertText3");
 
 // a Tag Smooth Scroll
-document.querySelectorAll("nav a").forEach((anchor) => {
+document.querySelectorAll("nav li a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));

@@ -60,7 +60,6 @@ header {
 .navbar .navbar-brand img {
   width: 35px;
   height: 35px;
-  /* background-color: pink; */
 }
 
 .navbar-nav .nav-link {
@@ -71,6 +70,30 @@ header {
 
 .navbar-nav li {
   margin-left: 36px;
+}
+
+.nav-login-btn {
+  max-width: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 36px;
+  background-color: #434ee1;
+  border-radius: 4px;
+}
+
+.nav-login-btn .login-a-tag {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: "puvi-Semi-Bold";
+  background-color: #434ee1;
+  /* background-color: yellow; */
 }
 
 /* Section-1 Style */
@@ -962,6 +985,10 @@ header {
   .navbar-nav li {
     margin-left: 0px;
   }
+
+  .nav-login-btn {
+    margin-left: 0px;
+  }
 }
 
 /*Struggling to engage your website visitors? gap align */
@@ -1154,6 +1181,10 @@ header {
   }
 
   .navbar-nav li {
+    margin-left: 0px;
+  }
+
+  .nav-login-btn {
     margin-left: 0px;
   }
 
