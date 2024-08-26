@@ -178,7 +178,7 @@ header {
 }
 
 .warring-text {
-  display: none;
+  visibility: hidden;
   margin-left: 5px;
   margin-top: 3px;
   color: #ff6e57;
@@ -690,7 +690,7 @@ header {
 }
 
 .warring-text2 {
-  display: none;
+  visibility: hidden;
   margin-left: 5px;
   margin-top: 3px;
   color: #ff6e57;
@@ -842,7 +842,7 @@ header {
 }
 
 .warring-text3 {
-  display: none;
+  visibility: hidden;
   margin-left: 5px;
   margin-top: 3px;
   color: #ff6e57;
