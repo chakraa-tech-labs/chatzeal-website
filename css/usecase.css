@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "puvi-Medium";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Medium.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Regular";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Light";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Light.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Bold";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Semi-Bold";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Semibold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+/* Main-Body */
+.use-case-main-body {
+  margin-top: 83px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.use-case-box {
+  min-height: 480px;
+  border-radius: 20px;
+  padding: 40px 70px;
+  background: #f2f1f9;
+  border: 1px solid #ffffff;
+  display: flex;
+  gap: 42px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 6px 28.2px 0px #00000040;
+}
+
+.use-case-sub-box {
+  display: flex;
+  gap: 90px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.use-case-content-box {
+  width: 442px;
+  height: 109px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.use-case-content-img-box {
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+
+.use-case-content-img-1-box {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.use-case-content-img-no-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #000000;
+  background: #f2f1f9;
+  text-align: center;
+  align-content: center;
+  position: absolute;
+  top: 70px;
+  left: 28px;
+}
+
+.use-case-content-text {
+  width: 330px;
+  font-size: 20px;
+  color: #5d5858;
+}
+
+/*  */
+@media (min-width: 480px) and (max-width: 1247px) {
+  .use-case-sub-box {
+    gap: 42px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 619px) {
+  .use-case-box {
+   padding: 20px 20px;
+  }
+}
