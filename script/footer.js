@@ -80,4 +80,3 @@ if (footer) {
   console.error("Parent element not found for the footer.");
 }
 
-console.log("footer");

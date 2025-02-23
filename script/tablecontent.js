@@ -1,35 +1,41 @@
-const blogDataScript = document.currentScript;
+const script = document.currentScript;
 
-if (blogDataScript) {
-  const jsonString = blogDataScript.getAttribute("data-json");
-  const blogData = JSON.parse(jsonString);
+const data = JSON.parse(script.getAttribute('data-json'));
 
-  console.log(blogData);
-
-  const blogTemplate = blogData
-    .map(
-      (item) => `
-    <a href="${item.href}">
-      <div class="blog-details-table-content">
-        <div class="blog-details-line-box">
-          <div class="line-dot"></div>
-          <div class="line"></div>
-        </div>
-        <div class="">${item.content}</div>
+const tableTemplate = `
+  <div class="blog-details-table-content-box">
+    <div class="blog-details-table">
+      <div class="blog-details-table-title">TABLE OF CONTENTS</div>
+      <div class="blog-details-table-content-body">
+        ${data.map(item => `
+          <a href="${item.href}">
+            <div class="blog-details-table-content">
+              <div class="blog-details-line-box">
+                <div class="line-dot"></div>
+                <div class="line"></div>
+              </div>
+              <div class="blog-details-table-content-text">${item.content}</div>
+            </div>
+          </a>
+        `).join('')}
       </div>
-    </a>
-  `
-    )
-    .join("");
+    </div>
+    <div class="blog-details-table-footer">
+      <div class="blog-details-table-footer-text">SHARE THIS ARTICLE</div>
+      <div class="blog-details-table-footer-img-box">
+        <a href=""><img src="icon/facebook2.svg" alt="Facebook"></a>
+        <a href=""><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href=""><img src="icon/linkedin.svg" alt="LinkedIn"></a>
+        <a href=""><img src="icon/insta.svg" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+`;
 
-  const blogContainer = document.querySelector(
-    ".blog-details-table-content-body"
-  );
-  if (blogContainer) {
-    blogContainer.innerHTML = blogTemplate;
-  } else {
-    console.error("Parent element not found for the blog details.");
-  }
+// Insert the header template into the parent element
+const tableContent = script.parentElement;
+if (tableContent) {
+  tableContent.innerHTML = tableTemplate;
 } else {
-  console.error("Blog data script not found.");
+  console.error("Parent element not found for the Table of Contents.");
 }

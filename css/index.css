@@ -34,6 +34,7 @@
   scroll-behavior: smooth;
 }
 
+/* Body  */
 .index-body {
   width: 100vw;
   overflow-x: hidden;
@@ -41,6 +42,7 @@
   background-color: #f0f0f0 !important;
 }
 
+/* Circle Style */
 .cirule-body {
   width: 100vw;
   height: 900px;
@@ -80,10 +82,10 @@
 
 /* Header Style */
 header {
-  padding-top: 28px;
+  z-index: 2;
   position: sticky;
   top: 0;
-  z-index: 2;
+  padding-top: 28px;
   background-color: transparent;
 }
 
@@ -103,16 +105,16 @@ header {
   display: flex;
   gap: 37px;
   align-items: center;
+  border-radius: 29px;
+  background-color: #f8f6ff;
   padding-left: 41px !important;
   padding-right: 41px !important;
-  background-color: #f8f6ff;
-  border-radius: 29px;
 }
 
 .navbar-nav .nav-link {
   font-size: 16px;
-  font-family: "puvi-Regular" !important;
   color: #000000 !important;
+  font-family: "puvi-Regular" !important;
 }
 
 .header-button-box {
@@ -123,9 +125,9 @@ header {
 }
 
 .header-login-button {
+  border: none;
   font-size: 16px;
   color: #2b1d84;
-  border: none;
   background-color: transparent;
 }
 
@@ -133,8 +135,8 @@ header {
   width: 139px;
   height: 48px;
   border: none;
-  border-radius: 29px;
   color: white;
+  border-radius: 29px;
   background: linear-gradient(105.75deg, #221769 -3.07%, #432dcf 61%);
 }
 
@@ -142,8 +144,8 @@ header {
 .index-landing-box {
   margin-top: 73px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -151,8 +153,8 @@ header {
   max-width: 691px;
   min-height: 331px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -164,11 +166,11 @@ header {
 }
 
 .index-landing-sub-box .text-2 {
-  max-width: 473px;
   font-size: 16px;
+  max-width: 473px;
   color: #050505;
-  text-align: center;
   margin-top: 18px;
+  text-align: center;
 }
 
 .index-landing-sub-box .button-box {
@@ -186,8 +188,8 @@ header {
 }
 
 .index-landing-sub-box .button-box .get-start {
-  color: white;
   border: none;
+  color: white;
   background: linear-gradient(105.75deg, #221769 -3.07%, #432dcf 61%);
 }
 
@@ -198,11 +200,11 @@ header {
 
 /*Index image Body  */
 .index-image-body {
+  margin-top: 72px;
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
-  margin-top: 72px;
 }
 
 .index-image-sub-body {
@@ -219,14 +221,14 @@ header {
 /*Use Case  */
 .use-case-body {
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  position: relative;
   padding-top: 130px;
   padding-bottom: 100px;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .use-case-circle {
@@ -236,8 +238,8 @@ header {
   position: absolute;
   right: -330px;
   bottom: -400px;
-  background: #2b1e8524;
   filter: blur(200px);
+  background: #2b1e8524;
 }
 
 .use-case-body-title {
@@ -271,12 +273,12 @@ header {
 .use-case-content {
   width: 300px;
   height: 300px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   gap: 11px;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  border-radius: 50%;
 }
 
 .use-case-content1 {
@@ -309,10 +311,10 @@ header {
 }
 
 .use-case-button button {
-  margin-top: 19px;
   width: 155px;
   height: 50px;
   font-size: 18px;
+  margin-top: 19px;
   color: #2b1d84;
   border-radius: 29px;
   border: 1px solid #2b1d84;
@@ -322,12 +324,12 @@ header {
 .index-features-body {
   width: 100vw;
   overflow: hidden;
+  position: relative;
   padding-bottom: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
 .index-features-circle {
@@ -335,8 +337,8 @@ header {
   height: 680px;
   border-radius: 50%;
   position: absolute;
-  background: #2b1e8524;
   filter: blur(200px);
+  background: #2b1e8524;
 }
 
 .index-features-circle-1 {
@@ -355,6 +357,7 @@ header {
   bottom: -340px;
   right: -300px;
   z-index: -1;
+  background: #2b1e8545;
 }
 
 .index-features-sub-body {
@@ -365,7 +368,6 @@ header {
   padding-left: 100px;
   padding-right: 20px;
   padding-top: 48px;
-  padding-bottom: 48px;
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
@@ -391,14 +393,10 @@ header {
   width: 397px;
   display: flex;
   gap: 24px;
-
 }
 
 .index-features-line-box {
   width: 17px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .index-features-line-dot {
@@ -677,18 +675,23 @@ header {
 
 /* Menu Bar gap align */
 @media (min-width: 480px) and (max-width: 991px) {
-  .header {
-  }
   .header-align-div {
     display: none;
   }
+
   .header-ul {
-    gap: 10px;
+    display: flex;
+    gap: 0px !important;
     margin-top: 5px;
   }
 
   .header-ul-body {
     display: block;
+  }
+
+  .navbar-nav .nav-link {
+    height: 45px;
+    align-content: center;
   }
 
   .header-button-box {
@@ -735,6 +738,7 @@ header {
     gap: 20px;
   }
 }
+
 
 /* Features media quries */
 @media (min-width: 480px) and (max-width: 1283px) {
@@ -784,6 +788,11 @@ header {
   }
 
   /* Header */
+  .header-ul {
+    display: flex;
+    gap: 0px !important;
+    margin-top: 5px;
+  }
   .navbar .navbar-brand img {
     width: 100px;
     height: 32px;
@@ -804,6 +813,7 @@ header {
   }
 
   .navbar-nav .nav-link {
+    height: 45px;
     align-content: center;
   }
 
@@ -911,7 +921,7 @@ header {
 
   .index-features-circle-3 {
     bottom: -200px;
-    right: -300px;
+    right: -250px;
     z-index: -1;
   }
 
@@ -950,22 +960,19 @@ header {
     background: #000000;
   }
 
-  .index-features-content3  .index-features-line,
-  .index-features-content4  .index-features-line {
+  .index-features-content3 .index-features-line,
+  .index-features-content4 .index-features-line {
     height: 140px;
   }
 
-  .index-features-content6  .index-features-line {
+  .index-features-content6 .index-features-line {
     height: 90px;
   }
 
-
-  .index-features-content3    .index-features,
-  .index-features-content4    .index-features {
+  .index-features-content3 .index-features,
+  .index-features-content4 .index-features {
     padding-bottom: 20px;
   }
-
-
 
   .index-features-title {
     font-size: 18px;
@@ -1029,7 +1036,6 @@ header {
   }
 
   /* Footer */
-
   .footer-title {
     font-size: 24px;
   }

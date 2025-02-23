@@ -1,14 +1,9 @@
-// Get the script tag that contains the JSON data
 const blogHeaderScript = document.currentScript;
 
 if (blogHeaderScript) {
-  // Get the JSON string from the data-json attribute
   const jsonString = blogHeaderScript.getAttribute("data-json");
-
-  // Parse the JSON data
   const blogHeaderData = JSON.parse(jsonString);
 
-  // Generate the blog header content dynamically
   const blogHeaderTemplate = `
     <div class="container-fluid blog-details-header-box">
       <div class="blog-details-header-text">
@@ -22,7 +17,7 @@ if (blogHeaderScript) {
 
     <div class="log-details-header-info-box">
       <div class="log-details-header-info-box-1">  
-         -By 
+         By 
         <span class="blue">${blogHeaderData.author}</span> 
         <span class="dot"></span> 
         <span class="date">${blogHeaderData.readTime}</span>
@@ -31,13 +26,23 @@ if (blogHeaderScript) {
     </div>
   `;
 
-  // Insert the generated content into the parent container
   const blogHeader = blogHeaderScript.parentElement;
   if (blogHeader) {
     blogHeader.innerHTML = blogHeaderTemplate;
   } else {
     console.error("Parent element not found for the blog details header.");
   }
-} else {
+} 
+
+else {
   console.error("Blog header script not found.");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".blog-details-table-content");
+  items.forEach((item) => {
+    const lineBox = item.querySelector(".blog-details-line-box .line");
+    const contentHeight = item.clientHeight; 
+    lineBox.style.height = `${contentHeight}px`;
+  });
+});
