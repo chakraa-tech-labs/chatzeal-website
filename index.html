@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatzeal - Drive your conversations to conversions</title>
-    <link rel="icon" type="image/x-icon" href="icons/fav-icon.svg">
+    <link rel="icon" type="image/x-icon" href="icon/fav-icon.svg" />
 
     <!-- Css Style Sheet -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/features.css" />
 
     <!-- Bootstarp Css Link -->
     <link
@@ -21,587 +22,334 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
-  <body id="body">
+  <body class="index-body">
 
-
-    <div class="container-fluid" id="background-div">
-      <div id="successMessage">
-        <div>
-          <div class="p1">Thank you for your interest.</div>
-          <div class="p2">We will update you through email.</div>
-        </div>
+    <div class="cirule-body">
+      <div class="cirule-sub-body">
+        <div class="index-circle index-circle-1"></div>
+        <div class="index-circle index-circle-2"></div>
       </div>
     </div>
 
-    
-
     <header class="container-fluid">
-      <nav class="container navbar navbar-light navbar-expand-lg">
-        <a href="#home" class="navbar-brand">
-          <img src="icons/logo.svg" alt="">
-          <div>Chatzeal</div>
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#mynavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav ml-auto nav_list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#features" class="nav-link">Features</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#solutions" class="nav-link">Solutions</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#get_Started" class="nav-link">Get Started</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <script src="script/header.js"></script>
     </header>
 
-    <section>
-      <div class="container-fluid section1" id="home">
-        <div class="row sec1-content-box ">
-          <div class="sec1-content-1">
-            <div class="content-text1">Engage. Convert. Grow.</div>
-            <div class="content-text2">
-              Transform your website visitors into loyal customers
-            </div>
-            <div class="content-text3">
-              <form name="waitlist" action="" onsubmit="successMessage1(event)" netlify>
-                <input
-                  placeholder="Enter your email"
-                  id="firstInput"
-                  oninput="resetStyle1()"
-                />
-                <button class="form"><div>Join the waitlist</div></button>
-                <p class="warring-text" id="alertText1">Please enter a valid email</p>
-              </form>
-            </div>
+    <main>
+      <!-- Landing-Text  -->
+      <div class="container-fluid index-landing-box">
+        <div class="index-landing-sub-box">
+          <div class="text-1">Turn Conversations into Conversions</div>
+          <div class="text-2">
+            Seamlessly connect with your audience on WhatsApp for marketing,
+            sales, and support. Automate interactions, enhance productivity, and
+            scale your customer engagement effortlessly.
           </div>
-          <div class="sec1-content-2">
-            <img src="media/section1-img.png" class="img-fluid" alt="" />
+          <div class="button-box">
+            <a href="https://chakraa.zohobookings.com/#/4779028000000042052" target="_blank">
+             <button class="get-start">Book a demo</button>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid section2">
-        <div class="row sec2-title">
-          <span> Drive your conversations to conversions</span>
-        </div>
-
-        <div class="row">
-          <div class="sec2-content-box">
-            <div class="sec2-box sec2-box1">
-              <div class="sec2-sub-box">
-                <div class="sec2-box-icon">
-                  <img src="icons/section2_Msg.svg" />
-                </div>
-                <div class="sec2-box-text">
-                  Streamlined Customer communication platform
-                </div>
-              </div>
-            </div>
-
-            <div class="sec2-box sec2-box2">
-              <div class="sec2-sub-box">
-                <div class="sec2-box-icon">
-                  <img src="icons/section2_Heart.svg" />
-                </div>
-                <div class="sec2-box-text sec2-box-text2">
-                  Automation for Lead nurturing & Customer engagement
-                </div>
-              </div>
-            </div>
-
-            <div class="sec2-box sec2-box3">
-              <div class="sec2-sub-box">
-                <div class="sec2-box-icon">
-                  <img src="icons/section2_Blub.svg" />
-                </div>
-                <div class="sec2-box-text sec2-box-text3">
-                  Comprehensive Analytics & Insights
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Image -->
+      <div class="container-fluid index-image-body">
+        <div class="index-image-sub-body">
+          <img src="media/home1.png" alt="" />
         </div>
       </div>
 
-      <div class="container-fluid section3">
-        <div class="row sec3-title">
-          Struggling to engage your website visitors?
-        </div>
-
-        <div class="row sec3-content">
-          <div class="sec3-content1">
-            <div class="sec3-con-box sec3-con-box1">
-              <div class="sec3-con-icon sec3-con1-icon">
-                <img src="icons/sec3-blue-handshake.svg" alt="" />
-              </div>
-
-              <div class="sec3-con-text1 sec3-con1-text1">
-                Instant Engagement
-              </div>
-
-              <div class="sec3-con-text2 sec3-con1-text2">
-                Allow visitors to initiate conversations instantly, right from
-                your website.
-              </div>
-            </div>
-
-            <div class="sec3-con-box sec3-con-box2">
-              <div class="sec3-con-icon sec3-con2-icon">
-                <img src="icons/sec3-blue-boost.svg" alt="" />
-              </div>
-
-              <div class="sec3-con-text1 sec3-con2-text1">
-                Boost Conversions
-              </div>
-
-              <div class="sec3-con-text2 sec3-con2-text2">
-                Turn casual browsers into paying customers with personalized
-                interactions.
-              </div>
-            </div>
-
-            <div class="sec3-con-box sec3-con-box3">
-              <div class="sec3-con-icon sec3-con3-icon">
-                <img src="icons/sec3-blue-puzzle.svg" alt="" />
-              </div>
-
-              <div class="sec3-con-text1 sec3-con3-text1">
-                Seamless Integration
-              </div>
-
-              <div class="sec3-con-text2 sec3-con3-text2">
-                Quick and easy setup with <br />
-                minimal technical effort.
-              </div>
-            </div>
-          </div>
-
-          <div class="sec3-content2">
-            <div class="sec3-con-box sec3-con2-box1">
-              <div class="sec3-con-icon">
-                <img src="icons/sec3-blue-headphone.svg" alt="" />
-              </div>
-              <div class="sec3-con-text1 sec3-content2-box1-text1">
-                Enhanced Customer Support
-              </div>
-              <div class="sec3-con-text2 sec3-content2-box1-text2">
-                Provide real-time assistance, answer queries, and resolve issues
-                promptly.
-              </div>
-            </div>
-
-            <div class="sec3-con-box sec3-con2-box2">
-              <div class="sec3-con-icon">
-                <img src="icons/sec3-blue-bar.svg" alt="" />
-              </div>
-              <div class="sec3-con-text1 sec3-content2-box2-text1">
-                Analytics & Insights
-              </div>
-              <div class="sec3-con-text2 sec3-content2-box2-text2">
-                Gain valuable insights into visitor behavior and chat
-                performance to optimize your strategy.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid section4" id="features">
-        <div class="row sec4-title">Key features</div>
-
-        <div class="row sec4-content">
-          <div class="sec4-con-box sec4-con-box1">
-            <div class="sec4-con-sub-box sec4-con-sub-box1">
-              <div class="sec4-con-box-img sec4-con-box1-img">
-                <img src="media/key_features1.png" alt="" />
-              </div>
-
-              <div class="sec4-con-box-text sec4-con-box1-text">
-                <div class="sec4-con-box-text-1 sec4-con-box1-text-1">
-                  Centralized contact management
-                </div>
-                <div class="sec4-con-box-text-2 sec4-con-box1-text-2">
-                  Segment and manage all your customer contacts seamlessly from
-                  <!-- <br /> -->
-                  a single platform.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec4-con-box sec4-con-box2">
-            <div class="sec4-con-sub-box sec4-con-sub-box2">
-              <div class="sec4-con-box-img sec4-con-box1-img">
-                <img src="media/key_features2.png" alt="" />
-              </div>
-              <div class="sec4-con-box-text sec4-con-box2-text">
-                <div class="sec4-con-box-text-1 sec4-con-box2-text-1">
-                  Automated lead nurturing
-                </div>
-                <div class="sec4-con-box-text-2 sec4-con-box2-text-2">
-                  Define automation rules to qualify leads, trigger automatic
-                  <!-- <br /> -->
-                  conversations, schedule follow-up tasks to ensure all your
-                  leads
-                  <!-- <br /> -->
-                  are attended.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec4-con-box sec4-con-box3">
-            <div class="sec4-con-sub-box sec4-con-sub-box3">
-              <div class="sec4-con-box-img sec4-con-box3-img">
-                <img src="media/key_features3.png" alt="" />
-              </div>
-              <div class="sec4-con-box-text sec4-con-box3-text">
-                <div class="sec4-con-box-text-1 sec4-con-box3-text-1">
-                  Integrate with CRM and other tools
-                </div>
-                <div class="sec4-con-box-text-2 sec4-con-box3-text-2">
-                  Seamlessly integrate with top business apps like Google Analytics, Hubspot, Zoho CRM, Zendesk, etc.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec4-con-box sec4-con-box4">
-            <div class="sec4-con-sub-box sec4-con-sub-box4">
-              <div class="sec4-con-box-img sec4-con-box4-img">
-                <img src="media/key_features4.png" alt="" />
-              </div>
-              <div class="sec4-con-box-text sec4-con-box4-text">
-                <div class="sec4-con-box-text-1 sec4-con-box4-text-1">
-                  Message templates and campaigns
-                </div>
-                <div class="sec4-con-box-text-2 sec4-con-box4-text-2">
-                  Draft message templates for consistent communication, schedule
-                  <!-- <br /> -->
-                  campaigns and broadcast messages to engage with your customers
-                  <!-- <br /> -->
-                  at the right time.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec4-con-box sec4-con-box5">
-            <div class="sec4-con-sub-box sec4-con-sub-box5">
-              <div class="sec4-con-box-img sec4-con-box5-img">
-                <img src="media/key_features5.png" alt="" />
-              </div>
-              <div class="sec4-con-box-text sec4-con-box5-text">
-                <div class="sec4-con-box-text-1 sec4-con-box5-text-1">
-                  Automated chat assignment & tracking
-                </div>
-                <div class="sec4-con-box-text-2 sec4-con-box5-text-2">
-                  Automatically assign customer chats to your team members to
-                  <!-- <br /> -->
-                  effectively track and ensure efficient handling of customer
-                  <!-- <br /> -->
-                  queries and follow-ups.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid section5 px-5" id="solutions">
-        <div class="row sec5-title ">Solutions</div>
-
-        <div class="row sec5-content">
-          <div class="sec5-content1-main-box">
-            <div class="sec5-content1-sub-box">
-              <div class="sec5-con-box sec5-con-box1">
-                <div class="sec5-con-icon sec5-con1-icon">
-                  <img src="icons/solution-contacts.svg" alt="" />
-                </div>
-
-                <div class="sec5-con1-text-box">
-                  <div class="sec5-con-text1 sec5-con1-text1">
-                    One-Click Chat
-                  </div>
-
-                  <div class="sec5-con-text2 sec5-con1-text2">
-                    Simplify the contact process with a
-                    <br />
-                    single click to start a
-                    <br />
-                    WhatsApp chat.
-                  </div>
-                </div>
-              </div>
-
-              <div class="sec5-con-box sec5-con-box2">
-                <div class="sec5-con-icon sec5-con2-icon">
-                  <img src="icons/solution-speaker.svg" alt="" />
-                </div>
-
-                <div class="sec5-con2-text-box">
-                  <div class="sec5-con-text1 sec5-con2-text1">
-                    24/7 Availability
-                  </div>
-                  <div class="sec5-con-text2 sec5-con2-text2">
-                    Keep the conversation going, <br />
-                    even when your team <br />is offline.
-                  </div>
-                </div>
-              </div>
-
-              <div class="sec5-con-box sec5-con-box3">
-                <div class="sec5-con-icon sec5-con2-icon">
-                  <img src="icons/solution-check.svg" alt="" />
-                </div>
-
-                <div class="sec5-con3-text-box">
-                  <div class="sec5-con-text1 sec5-con3-text1">
-                    Secure & Private
-                  </div>
-
-                  <div class="sec5-con-text2 sec5-con3-text2">
-                    Ensure all communications are secure and compliant with
-                    <br />
-                    privacy standards.
-                  </div>
-                </div>
-              </div>
-
-              <div class="sec5-con-box sec5-con-box4">
-                <div class="sec5-con-icon sec5-con2-icon">
-                  <img src="icons/solution-plug.svg" alt="" />
-                </div>
-
-                <div class="sec5-con4-text-box">
-                  <div class="sec5-con-text1 sec5-con4-text1">
-                    Automated Responses
-                  </div>
-
-                  <div class="sec5-con-text2 sec5-con4-text2">
-                    Use smart automation to handle <br />
-                    common queries and free up your <br />
-                    team’s time.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec5-content2-main-box" id="get_Started">
-            <div class="sec5-con2-title px-2">Get started in 3 easy steps</div>
-
-            <div class="sec5-content2-sub-box">
-              <div class="sec5-con2-box sec5-con2-box1">
-                <div class="sec5-con2-box-icon sec5-con2-box1-icon">
-                  <img src="icons/solution-con2-puzzle.svg" alt="" />
-                  <span>Integrate</span>
-                </div>
-
-                <div class="sec5-con2-box-text sec5-con2-box-text1">
-                  Add our widget to your website with a simple code snippet.
-                </div>
-              </div>
-
-              <div class="sec5-con2-box sec5-con2-box2">
-                <div class="sec5-con2-box-icon sec5-con2-box2-icon">
-                  <img src="icons/solution-con2-message.svg" alt="" />
-                  <span>Engage</span>
-                </div>
-
-                <div class="sec5-con2-box-text sec5-con2-box-text2">
-                  Visitors click to chat, initiating a conversation via
-                  WhatsApp.
-                </div>
-              </div>
-
-              <div class="sec5-con2-box sec5-con2-box3">
-                <div class="sec5-con2-box-icon sec5-con2-box3-icon">
-                  <img src="icons/solution-con2-serves.svg" alt="" />
-                  <span>Convert</span>
-                </div>
-
-                <div class="sec5-con2-box-text sec5-con2-box-text3">
-                  Provide personalized support and turn interactions into
-                  conversions.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sec5-content3-main-box" id="sec5-content3-main-box">
-            <div class="sec5-content3-sub-box">
-              <div class="sec5-con3-box sec5-con3-box1">
-                <div class="sec5-con3-box1-content-box">
-                  <div class="sec5-con3-box1-content1">
-                    Ready to revolutionize your customer engagement?
-                  </div>
-                  <div class="sec5-con3-box1-content2">
-                    Join now and see the difference our WhatsApp Chat
-                    Integration can make for your business.
-                  </div>
-                  <div class="sec5-con3-box1-content3">
-                    <form name="waitlist" action="" onsubmit="successMessage2(event)" netlify>
-                      <input
-                        placeholder="Enter your email"
-                        id="secoundInput"
-                        oninput="resetStyle2()"
-                      />
-                      <button class="form"><div>Join the waitlist</div></button>
-                      <p class="warring-text2" id="alertText2">
-                        Please enter a valid email
-                      </p>
-                    </form>
-                  </div>
-
-                  <div class="sec5-con3-box1-content4">
-                    Or, write to us at <a href="mailto:concierge@chatzeal.io">concierge@chatzeal.io</a>
-                  </div>
-
-                </div>
-              </div>
-              <div class="sec5-con3-box sec5-con3-box2">
-                <img src="media/customer_engagement3.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="contact">
-      <div class="footer container-fluid " id="contact">
-        <div class="footer-title row">A product of Chakraa Tech Labs</div>
-
-        <div class="footer-content-box row px-1">
-          <div class="footer-content1">
-            <div class="footer-con-text1 footer-con1-text1">INDIA</div>
-
-            <div class="footer-con-text2-box footer-con1-text2-box">
-              <img src="icons/footer-location.svg" alt="" />
-              <div class="footer-con-text2">
-                Chakraa Universal Tech Labs Private Limited,
-                <br> 
-                35/31, Chitragupta Nagar, Urapakkam, 
-                <br>
-                Chennai, Tamil Nadu - 603210.
-              </div>
-            </div>
-
-            <div class="footer-con-text3-box footer-con1-text3-box">
-              <img src="icons/footer-tax.svg" alt="" />
-              <div class="footer-con-text2">GST IN : 33AALCC2177J1ZJ</div>
-            </div>
-          </div>
-          <div class="footer-content2">
-            <div class="footer-con-text1 footer-con2-text1">USA</div>
-            <div class="footer-con-text2-box footer-con2-text2-box">
-              <img src="icons/footer-location.svg" alt="" />
-              <div class="footer-con-text2">
-                Chakraa Tech Labs LLC,
-                <br> 
-                701 Tillery Street Unit 12 - 1775, 
-                <br>
-                 Austin, Texas 78702.
-              </div>
-            </div>
-          </div>
-
-          <div class="footer-content3">
-            <div class="footer-con-text1 footer-con3-text1">Contact us</div>
-            <div class="footer-con-text2-box footer-con3-text2-box">
-               <div class="contact-detail">
-                <img src="icons/footer-message.svg" alt="" />
-                <div class="footer-con-text2">
-                  <a href="mailto:contact@chakraa.io">contact@chakraa.io</a>
-                  
-                </div>
-               </div>
-
-               <div class="contact-detail">
-                <img src="icons/footer-phone-2.svg" alt="" />
-                <div class="footer-con-text2">
-                  <a href="https://wa.me/919566587368?text=Hello" target="_blank">+91 95665 87368</a>
-                  
-                </div>
-               </div>
-              </div>
-
-            <div class="footer-con3-text3-box">
-
-              <div class="footer-con-text1 footer-con3-text1">
-                Subscribe to our newsletter
-              </div>
-
-              <div class="footer-form">
-                <form name="newsletter" action=" " onsubmit="successMessage3(event)" netlify>
-                  <input
-                    placeholder="Enter your email"
-                    id="thirdInput"
-                    oninput="resetStyle3()"
+      <!-- Use Case -->
+      <div class="container-fluid use-case-body">
+        <div class="use-case-circle"></div>
+        <div class="use-case-body-title">Use Cases</div>
+        <div class="use-case-content-body">
+          <div class="use-case-content-sub-box use-case-content-sub-box1">
+            <div class="use-case-title use-case-title1">
+              <svg width="200" height="50">
+                <defs>
+                  <path
+                    id="curve"
+                    d="M10,40 Q100,0 190,40"
+                    fill="transparent"
                   />
-                  <button>
-                    <div>Subscribe</div>
-                  </button>
-                </form>
-                <p class="warring-text3" id="alertText3">Please enter a valid email</p>
+                </defs>
+                <text fill="#2B1D84" font-size="14">
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                  >
+                    SALES
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+
+            <div class="use-case-content use-case-content1">
+              <div class="use-case-content-title">
+                Streamline <br />
+                followups
+              </div>
+              <div class="use-case-content-details">
+                Capture leads instantly, automate onboarding, and assign chats
+                to the right team members seamlessly.
               </div>
             </div>
+          </div>
+
+          <div class="use-case-content-sub-box use-case-content-sub-box2">
+            <div class="use-case-title use-case-title2">
+              <svg width="200" height="50">
+                <defs>
+                  <path
+                    id="curve"
+                    d="M10,40 Q100,0 190,40"
+                    fill="transparent"
+                  />
+                </defs>
+                <text fill="#2B1D84" font-size="14">
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                  >
+                    MARKETING
+                  </textPath>
+                </text>
+              </svg>
             </div>
+
+            <div class="use-case-content use-case-content2">
+              <div class="use-case-content-title">
+                Organise <br />
+                Campaigns
+              </div>
+              <div class="use-case-content-details">
+                Organize contacts, send targeted broadcasts, track engagement,
+                and nurture leads effectively.
+              </div>
+            </div>
+          </div>
+
+          <div class="use-case-content-sub-box use-case-content-sub-box3">
+            <div class="use-case-title use-case-title3">
+              <svg width="200" height="50">
+                <defs>
+                  <path
+                    id="curve"
+                    d="M10,40 Q100,0 190,40"
+                    fill="transparent"
+                  />
+                </defs>
+                <text fill="#2B1D84" font-size="14">
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                  >
+                    OPERATIONS
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+
+            <div class="use-case-content use-case-content3">
+              <div class="use-case-content-title">
+                Enhance <br />
+                Communication
+              </div>
+              <div class="use-case-content-details">
+                Automate order updates, integrate <br />
+                with Shopify, and respond to <br />
+                customer inquiries instantly.
+              </div>
+            </div>
+          </div>
+
+          <div class="use-case-content-sub-box use-case-content-sub-box4">
+            <div class="use-case-title use-case-title4">
+              <svg width="200" height="50">
+                <defs>
+                  <path
+                    id="curve"
+                    d="M10,40 Q100,0 190,40"
+                    fill="transparent"
+                  />
+                </defs>
+                <text fill="#2B1D84" font-size="14">
+                  <textPath
+                    href="#curve"
+                    startOffset="50%"
+                    text-anchor="middle"
+                  >
+                    SUPPORT
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+
+            <div class="use-case-content use-case-content4">
+              <div class="use-case-content-title">
+                Deliver Outstanding <br />
+                experience
+              </div>
+              <div class="use-case-content-details">
+                Automate query handling, route <br />
+                requests to the right team, and <br />
+                ensure timely resolution with <br />
+                follow-up tasks.
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-       <div class="container-fluid copyrights px-5">
-        <div class="row sub-copyrights">
-          <div class="copyrights-text copyrights-text1">
-            © 2024 Chakraa Universal Tech Labs Private Limited | All rights
-            reserved
-          </div>
-          <div class="copyrights-text copyrights-text2">
-           <a href="terms.html">Terms & Conditions</a>  | <a href="privacy.html">Privacy Policy</a> 
-          </div>
+        <div class="use-case-button">
+          <a href="usecase.html">
+           <button>Learn More</button>
+          </a>
         </div>
       </div>
 
+      <!-- Features -->
+      <div class="container-fluid index-features-body">
+        <div class="index-features-circle index-features-circle-1"></div>
+        <div class="index-features-circle index-features-circle-2"></div>
+        <div class="index-features-circle index-features-circle-3"></div>
 
-      <div class="container-fluid" id="background-div-2">
-        <div id="successMessage2">
-          <div>
-            <div class="p1">Thank you for your interest.</div>
-            <div class="p2">We will update you through email.</div>
+        <div class="index-features-sub-body">
+          <div class="index-features-content-box">
+            <div class="index-features-content-title">Features</div>
+
+            <div class="index-features-content-sub-box">
+              <div class="index-features-content index-features-content1">
+                <div class="index-features-line-box">
+                  <div class="index-features-line-dot"></div>
+                  <div class="index-features-line"></div>
+                </div>
+
+                <div class="index-features-box">
+                  <div class="index-features-title">Messaging Management</div>
+                  <div class="index-features">
+                    Unified inbox for handling all WhatsApp conversations.
+                    Real-time notifications for incoming messages.
+                  </div>
+                </div>
+              </div>
+              <div class="index-features-content index-features-content2">
+                <div class="index-features-line-box">
+                  <div class="index-features-line-dot"></div>
+                  <div class="index-features-line"></div>
+                </div>
+
+                <div class="index-features-box">
+                  <div class="index-features-title">Intelligent Assignment</div>
+                  <div class="index-features">
+                    Create rules for automatic message assignment.Ensure equal
+                    workload distribution with round-robin routing.
+                  </div>
+                </div>
+              </div>
+
+              <div class="index-features-content index-features-content3">
+                <div class="index-features-line-box">
+                  <div class="index-features-line-dot"></div>
+                  <div class="index-features-line"></div>
+                </div>
+
+                <div class="index-features-box">
+                  <div class="index-features-title">Automation at Its Best</div>
+                  <div class="index-features">
+                    Collect prospect details with automated <br />
+                    onboarding scripts. Respond to FAQs instantly <br />
+                    without human intervention.
+                  </div>
+                </div>
+              </div>
+
+              <div class="index-features-content index-features-content4">
+                <div class="index-features-line-box">
+                  <div class="index-features-line-dot"></div>
+                  <div class="index-features-line"></div>
+                </div>
+
+                <div class="index-features-box">
+                  <div class="index-features-title">Seamless Integrations</div>
+                  <div class="index-features">
+                    Push contact data and chat history to CRMs like <br />
+                    Hubspot and Zoho CRM. Sync order details and <br />
+                    customer data with Shopify.
+                  </div>
+                </div>
+              </div>
+
+              <div class="index-features-content index-features-content5">
+                <div class="index-features-line-box">
+                  <div class="index-features-line-dot"></div>
+                  <div class="index-features-line"></div>
+                </div>
+
+                <div class="index-features-box">
+                  <div class="index-features-title">Messaging Management</div>
+                  <div class="index-features">
+                    Unified inbox for handling all WhatsApp conversations.
+                    Real-time notifications for incoming messages.
+                  </div>
+                </div>
+              </div>
+
+              <div class="index-features-content index-features-content6">
+                <div class="index-features-line-box">
+                  <div class="index-features-line-dot"></div>
+                  <div class="index-features-line"></div>
+                </div>
+
+                <div class="index-features-box">
+                  <div class="index-features-title">Click-to-Chat Widget</div>
+                  <div class="index-features">
+                    Fully customizable widget for your website. Capture leads
+                    directly into your CRM.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="index-features-img-box">
+            <img src="media/home2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="index-features-btn">
+          <a href="features.html">
+            <button>Know More</button>
+          </a>
         </div>
       </div>
 
+      <!--communication Text  -->
+      <div class="container-fluid index-communication-text-body">
+        <div class="index-communication-circle index-communication-circle-1"></div>
+        <div class="index-communication-circle index-communication-circle-2"></div>
+        <div class="index-communication-circle index-communication-circle-3"></div>
+
+        <div class="index-communication-text">
+          Start scaling your business communication today.
+        </div>
+        <div class="index-communication-button-box">
+          <a href="https://chakraa.zohobookings.com/#/4779028000000042052" target="_blank">
+            <button class="sign">Book a demo</button>
+          </a>
+        </div>
+      </div>
+    
+    </main>
+
+    <footer>
+      <script src="script/footer.js"></script>
     </footer>
-  </body>
 
-  <!-- Script -->
-  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
-  <script src="script/index.js"></script>
+    <script src="script/index.js"></script>
+
+  </body>
 </html>
