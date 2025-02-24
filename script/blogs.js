@@ -1,4 +1,3 @@
-
 let content = [
   {
     main_img: "blog_images/blogimg1.png",

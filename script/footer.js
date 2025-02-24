@@ -1,6 +1,7 @@
 const footerTemplate = `
   <div class="container-fluid footer-body">
-    <div class="footer-title">A product of Chakraa Tech Labs</div>
+     <!-- div class="footer-title">A product of Chakraa Tech Labs</div --> 
+    <div class="footer-title">Contact Us</div>
     <div class="container-fluid footer-content-box">
       <div class="footer-content footer-content1">
         <div class="country-name">INDIA</div>
@@ -36,12 +37,8 @@ const footerTemplate = `
       </div>
 
       <div class="footer-content footer-content3">
-        <div class="country-name">Contact Us</div>
+        <div class="country-name">Email</div>
         <div class="contact-box">
-          <div class="contact-icon">
-            <img src="icon/phone-call.svg" alt="">
-          </div>
-          <div class="address">+91 95665 87368</div>
         </div>
         <div class="contact-box">
           <div class="contact-icon">
@@ -57,17 +54,6 @@ const footerTemplate = `
     <div class="container-fluid footer-content-box2">
       <div class="text copy-rights-text">© 2024 Chakraa Universal Tech Labs Private Limited | All rights reserved</div>
       <div class="text terms-text">Terms & Conditions | Privacy Policy</div>
-      <div class="icon-box">
-        <div class="icon">
-          <img src="icon/face book.svg" alt="">
-        </div>
-        <div class="icon">
-          <img src="icon/face book.svg" alt="">
-        </div>
-        <div class="icon">
-          <img src="icon/face book.svg" alt="">
-        </div>
-      </div>
     </div>
   </div>
 `;

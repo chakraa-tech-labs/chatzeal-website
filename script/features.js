@@ -15,5 +15,3 @@ document.querySelectorAll(".sub-header-box .sub-header a").forEach((anchor) => {
       });
     });
   });
-
-  

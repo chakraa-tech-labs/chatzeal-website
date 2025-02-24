@@ -85,8 +85,7 @@ header {
   z-index: 2;
   position: sticky;
   top: 0;
-  padding-top: 28px;
-  background-color: transparent;
+  padding-top: 10px;
 }
 
 .navbar .navbar-brand img {
@@ -640,10 +639,9 @@ header {
 .footer-content-box2 {
   max-width: 1240px;
   display: flex;
-  gap: 170px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .footer-content-box2 .text {
@@ -808,7 +806,7 @@ header {
   }
 
   .header-sign-button {
-    width: 100px;
+    width: 130px;
     height: 35px;
   }
 

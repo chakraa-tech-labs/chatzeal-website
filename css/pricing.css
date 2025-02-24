@@ -26,17 +26,13 @@
 * {
   margin: 0;
   padding: 0;
-  -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
-  display: none;
-  scroll-behavior: smooth;
-}
+
 
 /* Title */
 .pricing-main-body {
-  margin-top: 76px;
+  /* margin-top: 76px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,9 +40,11 @@
 
 .pricing-page-title {
   max-width: 607px;
+  min-height: 450px;
   font-size: 48px;
   color: #000000;
   text-align: center;
+  align-content: center;
   font-family: "puvi-Bold";
 }
 

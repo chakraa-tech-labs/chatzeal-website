@@ -26,13 +26,13 @@
 * {
   margin: 0;
   padding: 0;
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none; */
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
   scroll-behavior: smooth;
-}
+} */
 
 /* Header Box  */
 .blog-details-header-box {
