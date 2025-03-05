@@ -21,7 +21,7 @@ const headerTemplate = `
             <a href="features.html" class="nav-link">Features</a>
           </li>
           <li class="nav-item">
-            <a href="usecase.html" class="nav-link">Use Cases</a>
+            <a href="usecases.html" class="nav-link">Use Cases</a>
           </li>
           <li class="nav-item">
             <a href="pricing.html" class="nav-link">Pricing</a>
