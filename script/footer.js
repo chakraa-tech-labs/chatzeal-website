@@ -7,7 +7,7 @@ const footerTemplate = `
         <div class="country-name">INDIA</div>
         <div class="address-box">
           <div class="address-icon">
-            <img src="icon/location.svg" alt="">
+            <img src="/icon/location.svg" alt="">
           </div>
           <div class="address">Chakraa Universal Tech Labs Private Limited, <br>
             35/31, Chitragupta Nagar, Urapakkam, <br>
@@ -26,7 +26,7 @@ const footerTemplate = `
         <div class="country-name">USA</div>
         <div class="address-box">
           <div class="address-icon">
-            <img src="icon/location.svg" alt="">
+            <img src="/icon/location.svg" alt="">
           </div>
           <div class="address">
             Chakraa Tech Labs LLC,<br>
@@ -42,7 +42,7 @@ const footerTemplate = `
         </div>
         <div class="contact-box">
           <div class="contact-icon">
-            <img src="icon/email.svg" alt="">
+            <img src="/icon/email.svg" alt="">
           </div>
           <div class="address">
             <a href="mailto:contact@chakraa.io">contact@chakraa.io</a>
