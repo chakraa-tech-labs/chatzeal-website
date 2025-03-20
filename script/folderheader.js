@@ -1,8 +1,8 @@
 const headerTemplate = `
   <header>
     <nav class="container-fluid navbar navbar-light navbar-expand-lg">
-      <a href="index.html" class="navbar-brand">
-        <img src="icon/logo.svg" alt="" />
+      <a href="../index.html" class="navbar-brand">
+        <img src="../icon/logo.svg" alt="" />
       </a>
 
       <button
@@ -18,16 +18,16 @@ const headerTemplate = `
         <div class="header-align-div"></div>
         <ul class="navbar-nav nav_list header-ul">
           <li class="nav-item">
-            <a href="features.html" class="nav-link">Features</a>
+            <a href="../features.html" class="nav-link">Features</a>
           </li>
           <li class="nav-item">
-            <a href="usecases.html" class="nav-link">Use Cases</a>
+            <a href="../usecases.html" class="nav-link">Use Cases</a>
           </li>
           <li class="nav-item">
-            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="../pricing.html" class="nav-link">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="blogs.html" class="nav-link">Blogs</a>
+            <a href="../blogs.html" class="nav-link">Blogs</a>
           </li>
         </ul>
         <div class="header-button-box">
