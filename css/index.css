@@ -81,11 +81,13 @@
 }
 
 /* Header Style */
-header {
+.header-body {
   z-index: 2;
-  position: sticky;
-  top: 0;
-  padding-top: 10px;
+}
+
+.sticky-header{
+  position: sticky !important;
+  top: 0 ;
 }
 
 .navbar .navbar-brand img {

@@ -3,7 +3,7 @@ document.querySelectorAll(".sub-header-box .sub-header a").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute("href"));
-      const offset = 68;
+      const offset = 500;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = target.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;

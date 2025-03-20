@@ -1,5 +1,5 @@
 const headerTemplate = `
-  <header>
+  <div >
     <nav class="container-fluid navbar navbar-light navbar-expand-lg">
       <a href="index.html" class="navbar-brand">
         <img src="icon/logo.svg" alt="" />
@@ -40,7 +40,7 @@ const headerTemplate = `
         </div>
       </div>
     </nav>
-  </header>
+  </div>
 `;
 
 // Insert the header template into the parent element
