@@ -53,7 +53,7 @@ const footerTemplate = `
 
     <div class="container-fluid footer-content-box2">
       <div class="text copy-rights-text">© 2024 Chakraa Universal Tech Labs Private Limited | All rights reserved</div>
-      <div class="text terms-text">Terms & Conditions | Privacy Policy</div>
+      <div class="text terms-text"><a href="terms.html">Terms & Conditions</a>  | <a href="privacy.html">Privacy Policy</a> </div>
     </div>
   </div>
 `;
