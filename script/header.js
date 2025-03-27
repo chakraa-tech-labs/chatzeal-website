@@ -34,8 +34,8 @@ const headerTemplate = `
           <a href="https://app.chatzeal.io/" target="_blank" class="nav-link">
             <button class="header-login-button">Login</button>
           </a>
-          <a href="https://chakraa.zohobookings.com/#/4779028000000042052" target="_blank" class="nav-link">
-            <button class="header-sign-button">Book a demo</button>
+          <a href="https://calendly.com/chatzeal/strategy-demo" target="_blank" class="nav-link">
+            <button class="header-sign-button">Book a Demo</button>
           </a>
         </div>
       </div>

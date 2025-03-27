@@ -115,13 +115,18 @@
 .sub-contenbox {
   max-width: 1256px;
   width: 94%;
-  height: 660px;
+  /* height: 660px; */
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 40px;
+}
+
+.sub-contenbox-7{
+  background-color: white;
+
 }
 
 .sub-contenbox .circule {
@@ -184,6 +189,15 @@
   max-width: 488px;
 }
 
+.contenbox-6-text-box .content {
+  max-width: 500px;
+}
+
+.contenbox-7-text-box .content {
+  max-width: 500px;
+}
+
+
 .content-img-box {
   max-width: 910px;
   width: 72.7%;
@@ -197,6 +211,23 @@
 
 .content-img-box img {
   width: 100%;
+  height: 100%;
+}
+
+.content5-img-box{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.content7-img-box{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.content7-img-box img{
+  width: 70%;
   height: 100%;
 }
 

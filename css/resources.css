@@ -82,7 +82,8 @@
 }
 
 .resources-page-header-sub-body {
-  width: 70%;
+  /* width: 70%; */
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -98,6 +99,7 @@
   align-content: center;
   text-align: center;
   white-space: nowrap;
+  /* border: 1px solid red; */
 }
 
 .resources-page-header-a-tag:hover {
@@ -110,13 +112,14 @@
 .resources-page-header-a-tag::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 0%; 
   bottom: 0px;
-  width: 0;
+  width: 100%; 
   height: 3px;
   background-color: #2b1d84;
-  transition: all 0.3s ease-in-out;
-  transform: translateX(-50%);
+  transform: scaleX(0); 
+  transform-origin: left; /* Animation starts from left */
+  transition: transform 0.3s ease-in-out; /* Animate transform */
 }
 
 /* When active, animate the underline */
@@ -125,9 +128,8 @@
 }
 
 .resources-page-header-a-tag.active::after {
-  width: 100%;
+  transform: scaleX(1); /* Expand from left to right */
 }
-
 
 
 /* Resources Page Content */
@@ -173,11 +175,12 @@
 }
 
 .resources-page-sub-title-black {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "puvi-medium";
   margin-top: 20px;
   color: #000000;
 }
+
 
 .resources-page-content {
   margin-top: 20px;
@@ -288,7 +291,7 @@
 
 .resources-page-list-title {
   color: #000000;
-  font-family: "puvi-semi-bold";
+  font-family: "puvi-medium";
 }
 
 .resources-page-list-ul-body {
@@ -312,6 +315,10 @@
 .resources-page-li {
   margin-bottom: 10px;
   text-align: justify;
+}
+
+.resources-page-left-li{
+  margin-left: 30px;
 }
 
 /*Resources Page Table */
