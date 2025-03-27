@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "puvi-Medium";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Medium.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Regular";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Light";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Light.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Bold";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "puvi-Semi-Bold";
+  src: url("../fonts/OpenType-TT/Zoho\ Puvi\ Semibold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+/* Header Style */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.navbar .navbar-brand div {
+  color: #434ee1 !important;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "puvi-Regular";
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-family: "puvi-Regular";
+  color: #000000 !important;
+}
+
+.navbar-nav li {
+  margin-left: 36px;
+}
+
+/* Terms Content Common Style */
+section {
+  padding-bottom: 20px;
+}
+
+.terms-of-service-heading {
+  font-size: 30px;
+  margin: 30px;
+  text-align: center;
+  font-family: "puvi-bold";
+}
+
+.terms-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.terms-last-update {
+  text-align: right;
+}
+
+.terms-title {
+  font-size: 24px;
+  font-family: "puvi-Semi-Bold";
+}
+
+.terms-content1 {
+  text-align: justify;
+  font-size: 16px;
+  font-family: "puvi-Regular";
+}
+.terms-content2 {
+  font-size: 16px;
+  font-family: "puvi-Regular";
+  padding-left: 20px;
+}
+
+.termsmail {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.termsmail:hover {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: underline;
+}
+
+.terms-to-privact-link-tag {
+  text-decoration: underline;
+}
+
+/* Menu Bar gap align */
+@media (min-width: 480px) and (max-width: 991px) {
+  .navbar-nav li {
+    margin-left: 0px;
+  }
+}
+
