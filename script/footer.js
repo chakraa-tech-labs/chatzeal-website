@@ -80,6 +80,19 @@ const footerTemplate = `
           Best WhatsApp Marketing Tools
         </div>
        </a>
+
+       <a class = "country-name-a-tag" href="resources/complete-guide.html">
+        <div class="country-name-a-tag-text">
+          WhatsApp Broadcasts
+        </div>
+       </a>
+
+       <a class = "country-name-a-tag" href="resources/bulk-messages.html">
+        <div class="country-name-a-tag-text">
+          Bulk Messages Best Practices
+        </div>
+       </a>
+       
       </div>
     </div>
 

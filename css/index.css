@@ -34,10 +34,6 @@
   scroll-behavior: smooth;
 } */
 
-body::-webkit-scrollbar {
-  display: none;
-  scroll-behavior: smooth;
-}
 
 /* Body  */
 .index-body {

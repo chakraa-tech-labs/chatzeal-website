@@ -44,6 +44,7 @@
 }
 
 .resources-page-title-content-1 {
+  max-width: 800px;
   font-size: 40px;
   color: #ffffff;
   text-align: center;
@@ -79,6 +80,10 @@
   top: 0px;
   z-index: 1;
   overflow-x: auto;
+}
+
+.resources-page-header-body::-webkit-scrollbar{
+  display: none;
 }
 
 .resources-page-header-sub-body {
@@ -188,10 +193,13 @@
   text-align: justify;
 }
 
+.resources-page-content-left{
+  padding-left: 20px;
+}
+
 .resources-page-content,
 .resources-page-list-body,
-.resources-page-bold-span,
-.resources-page-list-ul-body {
+.resources-page-bold-span {
   font-size: 18px;
 }
 
@@ -449,9 +457,9 @@
     gap: 20px;
     justify-content: start;
   }
-  .resources-page-header-a-tag {
+  /* .resources-page-header-a-tag {
     height: 50px;
-  }
+  } */
 }
 
 /* Phone Size Media-Queries   */
@@ -533,7 +541,8 @@
   .resources-page-content,
   .resources-page-list-body,
   .resources-page-bold-span,
-  .resources-page-list-ul-body {
+  .resources-page-list-ul-body,
+  .resources-page-list-ul {
     font-size: 14px;
   }
 
