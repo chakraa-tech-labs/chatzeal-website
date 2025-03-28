@@ -2,7 +2,13 @@ const headerTemplate = `
   <div >
     <nav class="container-fluid navbar navbar-light navbar-expand-lg">
       <a href="index.html" class="navbar-brand">
-        <img src="icon/logo.svg" alt="" />
+      <div class = "header-logo-body">
+        <img class = "header-logo-img"" src="icon/logo.png" alt="" />
+        <span class = "header-logo-text">
+          Chatzeal 
+        </span>
+      </div>
+        
       </a>
 
       <button

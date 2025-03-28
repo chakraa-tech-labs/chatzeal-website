@@ -83,6 +83,7 @@
 
 /* Header Style */
 .header-body {
+  padding-top: 10px;
   z-index: 2;
 }
 
@@ -91,9 +92,22 @@
   top: 0;
 }
 
-.navbar .navbar-brand img {
-  width: 168px;
-  height: 32px;
+.header-logo-body{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.header-logo-img {
+  width: 45px;
+  height: 45px;
+}
+
+.header-logo-text{
+  color: #4F5BA8;
+  font-size: 32px;
+  align-content: center;
+  font-family: "puvi-semi-bold";
 }
 
 .header-ul-body {
@@ -116,7 +130,7 @@
 .navbar-nav .nav-link {
   font-size: 16px;
   color: #000000 !important;
-  font-family: "puvi-Regular" !important;
+  font-family: "puvi-medium" !important;
 }
 
 .header-button-box {
@@ -130,6 +144,7 @@
   border: none;
   font-size: 16px;
   color: #2b1d84;
+  font-family: "puvi-medium";
   background-color: transparent;
 }
 
@@ -138,6 +153,7 @@
   height: 48px;
   border: none;
   color: white;
+  font-family: "puvi-medium";
   border-radius: 29px;
   background: linear-gradient(105.75deg, #221769 -3.07%, #432dcf 61%);
 }
@@ -168,8 +184,8 @@
 }
 
 .index-landing-sub-box .text-2 {
-  font-size: 16px;
-  max-width: 473px;
+  font-size: 20px;
+  /* max-width: 473px; */
   color: #050505;
   margin-top: 18px;
   text-align: center;
@@ -543,7 +559,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 25px;
   padding-bottom: 30px;
   background-color: #120d37;
 }
@@ -582,7 +598,7 @@
   flex-wrap: wrap;
   align-items: start;
   justify-content: space-between;
-  margin-top: 34px;
+  margin-top: 45px;
   padding-bottom: 60px;
 }
 
