@@ -43,6 +43,7 @@
 /* Blog Box */
 .blogs-main-box {
   margin-top: 27px;
+  padding: 0px 20px;
   padding-bottom: 100px;
   display: flex;
   gap: 27px;
@@ -60,6 +61,7 @@
   height: 435px;
   padding: 16px;
   border-radius: 25px;
+  transition: 0.2s;
   background-color: white;
 }
 
@@ -88,6 +90,7 @@
   padding: 0px 10px;
   word-wrap: nowrap;
   margin-top: 22px;
+  font-family: "puvi-medium";
 }
 
 .blog-content {
@@ -95,6 +98,12 @@
   margin-top: 11px;
   color: #878c91;
   padding: 0px 10px;
+  font-family: "puvi-medium";
+}
+
+.blogs-box:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transform: scale(1.1);
 }
 
 .blog-author-box {

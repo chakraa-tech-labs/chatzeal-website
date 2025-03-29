@@ -6,23 +6,15 @@ if (blogHeaderScript) {
 
   const blogHeaderTemplate = `
     <div class="container-fluid blog-details-header-box">
-      <div class="blog-details-header-text">
-        ${blogHeaderData.text}
-      </div>
+      <div class="blog-details-header-sub-box">
+        <div class="blog-details-header-text">
+          ${blogHeaderData.text}
+        </div>
 
-      <div class="blog-details-header-img-box">
-        <img src="${blogHeaderData.image}" alt="Blog Header Image">
+        <div class="blog-details-header-img-box">
+          <img src="${blogHeaderData.image}" alt="Blog Header Image">
+        </div>
       </div>
-    </div>
-
-    <div class="log-details-header-info-box">
-      <div class="log-details-header-info-box-1">  
-         By 
-        <span class="blue">${blogHeaderData.author}</span> 
-        <span class="dot"></span> 
-        <span class="date">${blogHeaderData.readTime}</span>
-      </div>
-      <div class="">Last Updated on ${blogHeaderData.lastUpdated}</div>
     </div>
   `;
 
@@ -46,3 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
     lineBox.style.height = `${contentHeight}px`;
   });
 });
+
+
+
+
+{/* <div class="log-details-header-info-box">
+      <div class="log-details-header-info-box-1">  
+         By 
+        <span class="blue">${blogHeaderData.author}</span> 
+        <span class="dot"></span> 
+        <span class="date">${blogHeaderData.readTime}</span>
+      </div>
+      <div class="">Last Updated on ${blogHeaderData.lastUpdated}</div>
+    </div> */}

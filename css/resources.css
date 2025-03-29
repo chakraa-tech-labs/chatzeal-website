@@ -194,6 +194,12 @@
   text-align: justify;
 }
 
+.resources-page-li-content{
+  margin-top: 10px;
+  color: #000000;
+  text-align: justify;
+}
+
 .resources-page-content-left{
   padding-left: 20px;
 }
@@ -311,6 +317,14 @@
 
 .resources-page-li-span {
   font-family: "puvi-medium";
+}
+
+.resources-page-li-title-span{
+  margin-top: 20px !important;
+  font-size: 18px;
+  font-family: "puvi-medium";
+  border: 1px solid red;
+  
 }
 
 .resources-page-bold-span {

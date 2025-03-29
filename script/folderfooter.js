@@ -65,25 +65,25 @@ const footerTemplate = `
           Guides
         </div>
 
-       <a class = "country-name-a-tag" href="whatsApp-business-platform.html">
+       <a class = "country-name-a-tag" href="../resources/whatsApp-business-platform.html">
          <div class="country-name-a-tag-text">
             WhatsApp Business Platform
          </div>
        </a>
 
-       <a class = "country-name-a-tag" href="whatsapp-marketing-software.html">
+       <a class = "country-name-a-tag" href="../resources/whatsapp-marketing-software.html">
           <div class="country-name-a-tag-text">
             Best WhatsApp Marketing Tools
           </div>
        </a>
 
-       <a class = "country-name-a-tag" href="complete-guide.html">
+       <a class = "country-name-a-tag" href="../resources/complete-guide.html">
         <div class="country-name-a-tag-text">
           WhatsApp Broadcasts
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="bulk-messages.html">
+       <a class = "country-name-a-tag" href="../resources/bulk-messages.html">
         <div class="country-name-a-tag-text">
           Bulk Messages Best Practices
         </div>

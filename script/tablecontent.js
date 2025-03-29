@@ -23,10 +23,10 @@ const tableTemplate = `
     <div class="blog-details-table-footer">
       <div class="blog-details-table-footer-text">SHARE THIS ARTICLE</div>
       <div class="blog-details-table-footer-img-box">
-        <a href=""><img src="icon/facebook2.svg" alt="Facebook"></a>
-        <a href=""><img src="icon/twitter.svg" alt="Twitter"></a>
-        <a href=""><img src="icon/linkedin.svg" alt="LinkedIn"></a>
-        <a href=""><img src="icon/insta.svg" alt="Instagram"></a>
+        <a href=""><img src="../icon/facebook2.svg" alt="Facebook"></a>
+        <a href=""><img src="../icon/twitter.svg" alt="Twitter"></a>
+        <a href=""><img src="../icon/linkedin.svg" alt="LinkedIn"></a>
+        <a href=""><img src="../icon/insta.svg" alt="Instagram"></a>
       </div>
     </div>
   </div>
