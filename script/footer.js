@@ -69,30 +69,48 @@ const footerTemplate = `
           Guides
         </div>
 
-       <a class = "country-name-a-tag" href="resources/whatsApp-business-platform.html">
+       <a class = "country-name-a-tag" href="solutions/whatsapp-business-platforms.html">
         <div class="country-name-a-tag-text">
           WhatsApp Business Platform
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="resources/whatsapp-marketing-software.html">
+       <a class = "country-name-a-tag" href="solutions/whatsapp-marketing-softwares.html">
         <div class="country-name-a-tag-text">
           Best WhatsApp Marketing Tools
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="resources/complete-guide.html">
+       <a class = "country-name-a-tag" href="solutions/whatsapp-broadcast.html">
         <div class="country-name-a-tag-text">
           WhatsApp Broadcasts
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="resources/bulk-messages.html">
+       <a class = "country-name-a-tag" href="solutions/send-bulk-messages-on-whatsapp-without-getting-banned.html">
         <div class="country-name-a-tag-text">
           Bulk Messages Best Practices
         </div>
        </a>
-       
+
+       <a class = "country-name-a-tag" href="solutions/setup-and-manage-whatsapp-business-account.html">
+        <div class="country-name-a-tag-text">
+          The Ultimate Guide
+        </div>
+       </a>
+
+       <a class = "country-name-a-tag" href="solutions/conversational-messaging-platforms.html">
+        <div class="country-name-a-tag-text">
+          Conversational messaging
+        </div>
+       </a>
+
+       <a class = "country-name-a-tag" href="solutions/whatsapp-automation-tools.html">
+        <div class="country-name-a-tag-text">
+          WhatsApp Automation Tools
+        </div>
+       </a>
+
       </div>
     </div>
 

@@ -15,3 +15,24 @@ document.querySelectorAll(".blog-details-table-content-body a").forEach((anchor)
     });
   });
 });
+
+
+
+window.addEventListener("scroll", function () {
+  const tableBox = document.querySelector(".blog-details-content-parent-box");
+  const footer = document.querySelector("footer");
+  const container = document.querySelector(".blog-details-content-box");
+
+  const footerTop = footer.getBoundingClientRect().top;
+  const tableHeight = tableBox.offsetHeight;
+
+  
+  // If footer comes close, then stop the sticky and let it scroll
+  if (!footerTop < tableHeight+ -90 ) {
+    tableBox.style.position = "sticky";
+    tableBox.style.top = "60px";
+    
+  } 
+});
+
+

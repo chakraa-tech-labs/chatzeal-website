@@ -29,10 +29,8 @@
 }
 
 
-
 /* Title */
 .pricing-main-body {
-  /* margin-top: 76px; */
   display: flex;
   flex-direction: column;
   align-items: center;

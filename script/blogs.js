@@ -1,28 +1,16 @@
 let content = [
   {
-    link: "./blogs/business-need-whatsapp.html",
+    link: "./blogs/why-smb-need-whatsapp.html",
     main_img: "blog_images/blogimg1.png",
     title: "Why do small and mid-sized business need Whatsapp to stay competitive?",
     content:"Techniques to create content that captures attention and drives engagement.",
   },
   {
-    link: "./blogs/omnichannel-messaging.html",
+    link: "./blogs/how-omnichannel-messaging-enhances-customer-experience.html",
     main_img: "blog_images/blogimg2.png",
     title: "Omnichannel messaging",
     content:"How storytelling can enhance brand identity and connect with audiences.",
   },
-  {
-    link: "./blogs/conversational-messaging.html",
-    main_img: "blog_images/blogimg3.png",
-    title: "Conversational messaging",
-    content: "Key strategies to improve your website's search engine ranking.",
-  },
-  {
-    link: "./blogs/ultimate-guide.html",
-    main_img: "blog_images/blogimg4.png",
-    title: "The ultimate guide to setting up and managing a WhatsApp business account",
-    content: "Key strategies to improve your website's search engine ranking.",
-  }
 ];
 
 let container = document.getElementById("blogs-main-box");
