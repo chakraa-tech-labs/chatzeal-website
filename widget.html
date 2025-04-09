@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Common Header -->
+    <script src="script/commonHeader.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatzeal - Drive your conversations to conversions</title>
+    <link rel="icon" type="image/x-icon" href="icon/fav-icon.svg" />
+
+    <!-- Css Style Sheet -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/widget.css" />
+
+    <!-- Bootstarp Css Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstarp Script Link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="index-body">
+
+    <div class="cirule-body">
+      <div class="cirule-sub-body">
+        <div class="index-circle index-circle-1"></div>
+        <div class="index-circle index-circle-2"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="container-fluid header-body sticky-header">
+        <script src="script/header.js"></script>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+      <div class="container-fluid landpage-text">
+        Click To <br> WhatsApp Widget
+      </div>
+
+      <div class="widget-form-main-body">
+
+        <div class="widget-form-body">
+          <form class="widget-form">
+
+
+            <div class="widget-form-input-main-box">
+
+              <div class="widget-form-input-sub-box widget-form-input-sub-realtive-box">
+
+                <div class="widget-form-input-box">
+
+                  <div class="widget-form-input-img-box">
+                    <label for="widget-input-phone" class="widget-form-label">
+                      WhatsApp Number
+                    </label>
+                  </div>
+                  
+                  <input id="widget-input-phone" type="text" class="widget-form-input">
+                </div>
+
+                <p class="error-text">
+                  *please fill this filed
+                </p>
+
+              </div>
+
+              <div class="widget-form-input-sub-box">
+              
+                <div class="widget-form-input-box">
+
+                  <div class="widget-form-input-img-box">
+                    <label for="widget-input-cta" class="widget-form-label"> 
+                      Button CTA Text
+                    </label>
+                    <div class="widget-form-info-icon">
+                      <img src="icon/information.png" alt="">
+                      <div class="widget-form-info-text-box">
+                        This text will be displayed next to the button (Eg., 'Chat with us').
+                      </div>
+                    </div>
+                  </div>
+                  <input id="widget-input-cta" type="text" class="widget-form-input">
+                </div>
+
+              </div>
+
+              <div class="widget-form-input-sub-box" >
+               
+                <div class="widget-form-input-box">
+
+                  <div class="widget-form-input-img-box">
+                    <label for="widget-input-message" class="widget-form-label">
+                      Message Suggestion Text
+                    </label>
+                    <div class="widget-form-info-icon">
+                      <img src="icon/information.png" alt="">
+                      <div class="widget-form-info-text-box">
+                        This text will be displayed to the user in their WhatsApp message text box (Eg., 'Hi, I have a query').
+                      </div>
+                    </div>
+                  </div>
+
+                  <input id="widget-input-message" type="text" class="widget-form-input">
+                </div>
+
+              </div>
+
+              <div class="widget-form-input-sub-box">
+                
+                <div class="widget-form-input-box">
+                  <div class="widget-form-input-img-box">
+                    <label for="widget-input-id" class="widget-form-label">
+                      Widget Element ID
+                    </label>
+                    <div class="widget-form-info-icon">
+                      <img src="icon/information.png" alt="">
+                      <div class="widget-form-info-text-box">
+                        This will be used as the element id of the widget.
+                      </div>
+                    </div>
+                  </div>
+  
+                  <input id="widget-input-id" type="text" class="widget-form-input">
+                </div>
+
+              </div>
+
+              <div class="widget-form-input-sub-box">
+                <div class="widget-form-input-box">
+                  <div class="widget-form-input-img-box">
+                    <label for="widget-input-parent" class="widget-form-label">
+                      Parent Element ID
+                    </label>
+                    <div class="widget-form-info-icon">
+                      <img src="icon/information.png" alt="">
+                      <div class="widget-form-info-text-box">
+                        The widget will be appended as a child to this parent element. Leave blank for default placement.
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <input id="widget-input-parent" type="text" class="widget-form-input">
+                </div>
+
+              </div>
+
+              <div class="widget-form-input-sub-box">
+                <div class="widget-form-input-box">
+                  <div class="widget-form-input-img-box">
+                    <label for="widget-input-parent" class="widget-form-label">
+                      Including Script in &lt;head&gt; tag?
+                    </label>
+                    <div class="widget-form-info-icon">
+                      <img src="icon/information.png" alt="">
+                      <div class="widget-form-info-text-box">
+                        Enable this if you are planning to include this script in the &lt;head&gt; tag of your website.
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <label class="widget-form-switch">
+                    <input id="including-script-input" type="checkbox">
+                    <span class="widget-input-slider"></span>
+                  </label>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="widget-form-btn-box">
+              <button class="widget-form-btn">
+                Generate Script
+              </button>
+            </div>
+
+          </form>
+
+          <div class="widget-script-body">
+
+            <div class="widget-script-copy-icon-box">
+              <img src="icon/copy.png" alt="">
+              <div class="copy-popup-text-box">
+                <div class="">
+                  <div class="copy-popup-text-sub-box">
+                    copied
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="widget-script-text-body"></div>
+
+          </div>
+        </div>
+
+        <div class="widget-form-preview-box">
+          <div class="widget-form-preview-box-title">
+            Preview
+          </div>
+          <div class="widget-whatsapp-icon-body">
+            <img src="icon/whatsapp_icon.svg" class="widget-whatsapp-icon" >
+            <div class="widget-whatsapp-text"></div>
+          </div>
+          <img class="widget-form-preview-img" src="media/widget_preview.svg" alt="">
+        </div>
+        
+      </div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <script src="script/footer.js"></script>
+    </footer>
+
+    <script src="script/widget.js"></script>
+
+  
+  </body>
+</html>
