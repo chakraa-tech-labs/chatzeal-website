@@ -81,24 +81,6 @@ const footerTemplate = `
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="solutions/whatsapp-broadcast.html">
-        <div class="country-name-a-tag-text">
-          WhatsApp Broadcasts
-        </div>
-       </a>
-
-       <a class = "country-name-a-tag" href="solutions/send-bulk-messages-on-whatsapp-without-getting-banned.html">
-        <div class="country-name-a-tag-text">
-          Bulk Messages Best Practices
-        </div>
-       </a>
-
-       <a class = "country-name-a-tag" href="solutions/setup-and-manage-whatsapp-business-account.html">
-        <div class="country-name-a-tag-text">
-          The Ultimate Guide
-        </div>
-       </a>
-
        <a class = "country-name-a-tag" href="solutions/conversational-messaging-platforms.html">
         <div class="country-name-a-tag-text">
           Conversational messaging

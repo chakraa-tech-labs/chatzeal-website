@@ -129,6 +129,9 @@
 
 .blog-details-table {
   width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
   border-radius: 20px;
   padding: 36px 30px;
   padding-top: 25px;

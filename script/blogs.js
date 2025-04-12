@@ -11,6 +11,24 @@ let content = [
     title: "Omnichannel messaging",
     content:"How storytelling can enhance brand identity and connect with audiences.",
   },
+  {
+    link: "./blogs/setup-and-manage-whatsapp-business-account.html",
+    main_img: "blog_images/blogimg3.png",
+    title: "The ultimate guide to setting up ",
+    content:"How storytelling can enhance brand identity and connect with audiences.",
+  },
+  {
+    link: "./blogs/send-bulk-messages-on-whatsapp-without-getting-banned.html",
+    main_img: "blog_images/blogimg4.png",
+    title: "How to send bulk messages on whatsapp",
+    content:"How storytelling can enhance brand identity and connect with audiences.",
+  },
+  {
+    link: "./blogs/whatsapp-broadcast.html",
+    main_img: "blog_images/blogimg5.png",
+    title: "Complete Guide to WhatsApp Broadcast",
+    content:"How storytelling can enhance brand identity and connect with audiences.",
+  },
 ];
 
 let container = document.getElementById("blogs-main-box");
