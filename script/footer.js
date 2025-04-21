@@ -69,27 +69,27 @@ const footerTemplate = `
           Guides
         </div>
 
-       <a class = "country-name-a-tag" href="solutions/whatsapp-business-platforms.html">
-        <div class="country-name-a-tag-text">
-          WhatsApp Business Platform
-        </div>
-       </a>
-
        <a class = "country-name-a-tag" href="solutions/whatsapp-marketing-softwares.html">
         <div class="country-name-a-tag-text">
-          Best WhatsApp Marketing Tools
+          Best WhatsApp Marketing Softwares
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="solutions/conversational-messaging-platforms.html">
+       <a class = "country-name-a-tag" href="solutions/whatsapp-business-platforms.html">
         <div class="country-name-a-tag-text">
-          Conversational messaging
+          Best WhatsApp Business Platforms
         </div>
        </a>
 
        <a class = "country-name-a-tag" href="solutions/whatsapp-automation-tools.html">
         <div class="country-name-a-tag-text">
-          WhatsApp Automation Tools
+          Best WhatsApp Automation Tools
+        </div>
+       </a>
+
+       <a class = "country-name-a-tag" href="solutions/conversational-messaging-platforms.html">
+        <div class="country-name-a-tag-text">
+          Conversational Messaging
         </div>
        </a>
 
