@@ -26,12 +26,6 @@
 * {
   margin: 0;
   padding: 0;
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-  scroll-behavior: smooth;
 }
 
 /* Body  */
@@ -81,16 +75,32 @@
 }
 
 /* Header Style */
-header {
-  z-index: 2;
-  position: sticky;
-  top: 0;
+.header-body {
   padding-top: 10px;
+  z-index: 2;
 }
 
-.navbar .navbar-brand img {
-  width: 168px;
-  height: 32px;
+.sticky-header {
+  position: sticky !important;
+  top: 0;
+}
+
+.header-logo-body{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.header-logo-img {
+  width: 45px;
+  height: 45px;
+}
+
+.header-logo-text{
+  color: #4F5BA8;
+  font-size: 32px;
+  align-content: center;
+  font-family: "puvi-semi-bold";
 }
 
 .header-ul-body {
@@ -113,7 +123,7 @@ header {
 .navbar-nav .nav-link {
   font-size: 16px;
   color: #000000 !important;
-  font-family: "puvi-Regular" !important;
+  font-family: "puvi-medium" !important;
 }
 
 .header-button-box {
@@ -127,6 +137,7 @@ header {
   border: none;
   font-size: 16px;
   color: #2b1d84;
+  font-family: "puvi-medium";
   background-color: transparent;
 }
 
@@ -135,6 +146,7 @@ header {
   height: 48px;
   border: none;
   color: white;
+  font-family: "puvi-medium";
   border-radius: 29px;
   background: linear-gradient(105.75deg, #221769 -3.07%, #432dcf 61%);
 }
@@ -165,8 +177,8 @@ header {
 }
 
 .index-landing-sub-box .text-2 {
-  font-size: 16px;
-  max-width: 473px;
+  font-size: 20px;
+  /* max-width: 473px; */
   color: #050505;
   margin-top: 18px;
   text-align: center;
@@ -209,7 +221,7 @@ header {
 .index-image-sub-body {
   width: 81.3%;
   max-width: 1110px;
-  height: 510px;
+  height: 530px;
 }
 
 .index-image-sub-body img {
@@ -540,17 +552,36 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 51px;
+  padding-top: 25px;
   padding-bottom: 30px;
   background-color: #120d37;
 }
 
-.footer-title {
-  color: white;
-  font-size: 48px;
-  max-width: 892px;
-  text-align: center;
+.footer-title-box {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   font-family: "puvi-Medium";
+}
+
+.footer-title-content-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-title-content-box img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-title-content {
+  color: white;
+  font-size: 22px;
+  font-family: "puvi-medium";
 }
 
 .footer-content-box {
@@ -560,7 +591,7 @@ header {
   flex-wrap: wrap;
   align-items: start;
   justify-content: space-between;
-  margin-top: 34px;
+  margin-top: 45px;
   padding-bottom: 60px;
 }
 
@@ -569,12 +600,38 @@ header {
 }
 
 .footer-content3 {
-  width: 190px;
+  width: 280px;
+}
+
+.resources-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: "puvi-medium";
 }
 
 .country-name {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.country-name-a-tag {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.country-name-a-tag-text {
+  margin-bottom: 10px;
+}
+
+.country-name-a-tag:hover {
+  color: #0000ee;
+  text-decoration: none;
 }
 
 .address-box {
@@ -650,6 +707,17 @@ header {
   white-space: nowrap;
 }
 
+.footer-content-box2 .text a {
+  font-size: 14px;
+  color: white;
+  white-space: nowrap;
+}
+
+.footer-content-box2 .text a:hover {
+  color: #0000ee;
+  text-decoration: none;
+}
+
 .footer-content-box2 .icon-box {
   height: 35px;
   display: flex;
@@ -669,6 +737,9 @@ header {
 .footer-content-box2 .icon-box .icon img {
   width: 100%;
   height: 100%;
+}
+
+.terms-text {
 }
 
 /* Menu Bar gap align */
@@ -737,6 +808,11 @@ header {
   }
 }
 
+@media (min-width: 480px) and (max-width: 854px) {
+  .footer-title-box {
+    gap: 20px;
+  }
+}
 
 /* Features media quries */
 @media (min-width: 480px) and (max-width: 1283px) {
@@ -791,9 +867,14 @@ header {
     gap: 0px !important;
     margin-top: 5px;
   }
-  .navbar .navbar-brand img {
-    width: 100px;
-    height: 32px;
+
+  .header-logo-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-logo-text{
+    font-size: 25px;
   }
 
   .header-ul-body {
@@ -1034,8 +1115,18 @@ header {
   }
 
   /* Footer */
-  .footer-title {
-    font-size: 24px;
+
+  .footer-title-box{
+    gap: 15px;
+  }
+
+  .footer-title-content-box img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-title-content {
+    font-size: 18px;
   }
 
   .footer-content-box {

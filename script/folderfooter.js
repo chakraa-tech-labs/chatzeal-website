@@ -1,28 +1,27 @@
 const footerTemplate = `
   <div class="container-fluid footer-body">
      <!-- div class="footer-title">A product of Chakraa Tech Labs</div --> 
-     <div class="footer-title-box">
+    <div class="footer-title-box">
       <div class="footer-title-content-box">
-        <img src="icon/meta-logo.svg" alt="">
+        <img src="../icon/meta-logo.svg" alt="">
         <div class="footer-title-content">
           Meta approved Tech Provider
         </div>
       </div>
 
       <div class="footer-title-content-box">
-        <img src="icon/whatsapp-logo.svg" alt="">
+        <img src="../icon/whatsapp-logo.svg" alt="">
         <div class="footer-title-content">
           Powered by WhatsApp Business Platform
         </div>
       </div>
-
     </div>
     <div class="container-fluid footer-content-box">
       <div class="footer-content footer-content1">
         <div class="country-name">INDIA</div>
         <div class="address-box">
           <div class="address-icon">
-            <img src="icon/location.svg" alt="">
+            <img src="../icon/location.svg" alt="">
           </div>
           <div class="address">Chakraa Universal Tech Labs Private Limited, <br>
             35/31, Chitragupta Nagar, Urapakkam, <br>
@@ -39,10 +38,9 @@ const footerTemplate = `
 
       <div class="footer-content footer-content2">
         <div class="country-name">USA</div>
-
         <div class="address-box">
           <div class="address-icon">
-            <img src="icon/location.svg" alt="">
+            <img src="../icon/location.svg" alt="">
           </div>
           <div class="address">
             Chakraa Tech Labs LLC,<br>
@@ -50,18 +48,16 @@ const footerTemplate = `
             Austin, Texas 78702.
           </div>
         </div>
-
         <div class="address-box">
           <div class="contact-box">
             <div class="contact-icon">
-              <img src="icon/email.svg" alt="">
+              <img src="../icon/email.svg" alt="">
             </div>
             <div class="address">
               <a href="mailto:contact@chakraa.io">contact@chakraa.io</a>
             </div>
           </div>
         </div>  
-
       </div>
 
       <div class="footer-content footer-content3">
@@ -69,25 +65,25 @@ const footerTemplate = `
           Guides
         </div>
 
-       <a class = "country-name-a-tag" href="solutions/whatsapp-marketing-softwares.html">
+       <a class = "country-name-a-tag" href="../solutions/whatsapp-marketing-softwares.html">
         <div class="country-name-a-tag-text">
           Best WhatsApp Marketing Softwares
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="solutions/whatsapp-business-platforms.html">
+        <a class = "country-name-a-tag" href="../solutions/whatsapp-business-platforms.html">
         <div class="country-name-a-tag-text">
           Best WhatsApp Business Platforms
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="solutions/whatsapp-automation-tools.html">
+       <a class = "country-name-a-tag" href="../solutions/whatsapp-automation-tools.html">
         <div class="country-name-a-tag-text">
           Best WhatsApp Automation Tools
         </div>
        </a>
 
-       <a class = "country-name-a-tag" href="solutions/conversational-messaging-platforms.html">
+       <a class = "country-name-a-tag" href="../solutions/conversational-messaging-platforms.html">
         <div class="country-name-a-tag-text">
           Conversational Messaging
         </div>
@@ -98,7 +94,7 @@ const footerTemplate = `
 
     <div class="container-fluid footer-content-box2">
       <div class="text copy-rights-text">© 2024 Chakraa Universal Tech Labs Private Limited | All rights reserved</div>
-      <div class="text terms-text"><a href="terms.html">Terms & Conditions</a>  | <a href="privacy.html">Privacy Policy</a> </div>
+      <div class="text terms-text"><a href="../terms.html">Terms & Conditions</a>  | <a href="../privacy.html">Privacy Policy</a> </div>
     </div>
   </div>
 `;
